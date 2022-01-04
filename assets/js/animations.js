@@ -1,7 +1,4 @@
 
-$(document).ready(function(){
-  $("#myVideo")[0].play()
-});
 
 gsap.to("body", {
   backgroundColor: '#F5F5F5',
@@ -10,6 +7,7 @@ gsap.to("body", {
       trigger: ".partners-section",
       toggleActions: "play none none reverse",
       scroller: document.body, 
+
   },
 })
 
@@ -21,6 +19,7 @@ gsap.to(".services-section", {
       trigger: ".partners-section",
       toggleActions: "play none none reverse",
       scroller: document.body, 
+
   },
 })
 
@@ -176,17 +175,7 @@ $('.multiple-items').slick({
 
 
 
-let changeVid  = () => {
 
-  $("#myVideo").fadeOut();
-
-  setTimeout(() => {
-  $("#myVideo2").fadeIn();
-    
-  }, 500);
-
-  // $("#myVideo2")[0].play()
-}
 
 
 
@@ -198,14 +187,19 @@ project.forEach((project) => {
 
   $(project).children(".project-infos").children(".more").click(() => {
     let tl = gsap.timeline();
-      tl.to($(project).children(".project-infos").children(".description"), {
+      tl
+      .to($(project).children(".project-infos"), {
+        css: {"width": "150%"}
+      }, 0.1)
+      .to($(project).children(".project-infos").children(".description"), {
         css: {"max-height": "500px", "padding-bottom": "50px"},
         duration: 1
       })
       .from($(project).children(".project-infos").children(".description").children("p"), {
         x: -10,
         opacity: 0,
-      }, 0.2 )
+      }, 0.5)
+
 
     console.log("clicked")
   })
@@ -221,21 +215,21 @@ project.forEach((project) => {
 
   $(project).mouseleave(() => {
     let tl = gsap.timeline();
-    tl.to($(".description"), {
+    tl
+    .to($(".description"), {
       css: {"max-height": "0px", "padding-bottom": "0px"},
-      duration: 0.5
+    })
+    .to($(project).children(".project-infos"), {
+      css: {"width": "100%"}
     })
     .to($(project).children(".project-infos"), {
       opacity: 0,
       duration: 0.5
-    }, 0.3)
+    })
 
 
   })
-
-
   
-
 })
 
 

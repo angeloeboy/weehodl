@@ -118,15 +118,69 @@ text.forEach(function(element, i) {
   }, false);
 });
 
+let scrolled = false;
+
 ScrollTrigger.create({
   trigger: $(".testing-2"),
   start: "top",
   onUpdate: (self) => {
     console.log(self.progress.toFixed(3))
-    if(self.progress.toFixed(3) > 0.3){
-      $("#myVideo2")[0].defaultPlaybackRate = 3.0;
+    if(self.progress.toFixed(3) < 0.1){
+      scrolled = false
+
+    }else{
+      scrolled = true
+    }
+
+    if(self.progress.toFixed(3) > 0.1 && self.progress.toFixed(3) < 0.4 ){
       $("#myVideo2")[0].play()
+      setTimeout(() => {
+        $("#myVideo2")[0].pause()
+      }, 1000);
+    }
+
+    if(self.progress.toFixed(3) == 0 && scrolled){
+      $("#myVideo2")[0].play()
+      setTimeout(() => {
+        $("#myVideo2")[0].currentTime = 0;
+
+      }, 1000);
     }
 
   }
 })
+
+gsap.to($(".text-animation"), {
+  y: "-44%",
+  scrollTrigger: {
+    trigger: ".text-animation",
+    scroller: document.body, 
+    start: "center center",
+    scrub: 1
+}
+})
+
+
+
+$(document).ready(function(){
+  setTimeout(() => {
+    $(".text-animation")[0].play()
+    
+  }, 1000);
+});
+
+let playSecondVid = () => {
+  $("#myVideo")[0].play()
+}
+
+let changeVid  = () => {
+
+  $("#myVideo").fadeOut();
+
+  setTimeout(() => {
+  $("#myVideo2").fadeIn();
+    
+  }, 500);
+
+
+}
