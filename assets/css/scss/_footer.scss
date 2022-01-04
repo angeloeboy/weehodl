@@ -1,0 +1,49 @@
+footer {
+  padding: 100px 0px;
+  margin-top: 250px;
+  background: linear-gradient(
+    115.52deg,
+    #ffe600 5.27%,
+    #eebc1d 43.15%,
+    #9f7b06 104.08%
+  );
+
+  .text {
+    h1 {
+      font-weight: 900;
+      color: black;
+      font-size: 5vw;
+      position: relative;
+      overflow: hidden;
+      height: 100px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .hidden-text {
+      position: absolute;
+      z-index: 200;
+
+      span {
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+      }
+    }
+  }
+
+  .links-container {
+    .links {
+      margin-top: 20vh;
+      li {
+        list-style-type: none;
+        margin-top: 16px;
+        a {
+          color: black;
+          text-transform: uppercase;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

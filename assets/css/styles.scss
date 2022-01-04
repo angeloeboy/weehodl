@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500;600&family=Roboto+Condensed:wght@700&display=swap");
+
+@font-face {
+  font-family: bebas;
+  src: url("../fonts/BebasNeue-Bold.otf");
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  // background-color: rgb(0, 0, 0);
+  background: #0d0c0c;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  // background-image: url("../image/wolf.png");
+  // background-position: center;
+  // background-size: cover;
+}
+
+.scroller {
+  height: 100vh;
+}
+@import "scss/helper";
+@import "scss/hero";
+@import "scss/feature";
+@import "scss/services";
+@import "scss/partners";
+@import "scss/project";
+@import "scss/footer";

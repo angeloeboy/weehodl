@@ -1,0 +1,129 @@
+.feature-section {
+  //   min-height: 100vh;
+  margin: 200px 0px;
+  color: white;
+
+  @media (max-width: 600px) {
+    padding: 0px 5% !important;
+  }
+
+  .text {
+    h1 {
+      font-weight: 900;
+      color: white;
+      font-size: 80px;
+      position: relative;
+      overflow: hidden;
+      height: 100px;
+      margin: 0;
+
+      @media (max-width: 795px) {
+        font-size: 50px;
+        height: 70px;
+      }
+
+      @media (max-width: 700px) {
+        font-size: 40px;
+        height: 50px;
+      }
+
+      @media (max-width: 560px) {
+        font-size: 30px;
+        height: 50px;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 35px;
+        height: 40px;
+      }
+    }
+
+    .hidden-text {
+      position: absolute;
+      z-index: 200;
+      span {
+        color: gold;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: gold;
+      }
+    }
+  }
+  .text-container {
+    margin-top: 50px;
+    display: flex;
+    color: #e4e4e4;
+    align-items: center;
+
+    .features-info {
+      max-width: 617px;
+      width: 100%;
+
+      &-text {
+        font-size: 18px;
+        margin-top: 30px;
+        line-height: 183.5%;
+        margin-left: 50px;
+
+        @media (max-width: 1000px) {
+          margin-left: 0px;
+        }
+
+        @media (max-width: 600px) {
+          font-size: 16px;
+        }
+
+        div {
+          display: inline-block;
+          position: relative;
+          height: 24px;
+          overflow: hidden;
+          span {
+            display: inline-block;
+            opacity: 1;
+            transform: translateY(100%);
+          }
+        }
+      }
+    }
+
+    .line-wrapper {
+      overflow: hidden;
+    }
+
+    .circle {
+      width: 130px;
+      height: 130px;
+      top: 0;
+      left: 0;
+      border-radius: 80%;
+      backface-visibility: hidden;
+      pointer-events: none;
+      opacity: 1;
+      position: absolute;
+      z-index: 100;
+      border: 1px solid white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .img-container {
+      width: 50%;
+      position: relative;
+      overflow: none;
+      video {
+        z-index: -1;
+        width: 100%;
+      }
+
+      @media (max-width: 1000px) {
+        width: 100%;
+        max-width: 500px;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      flex-direction: column;
+    }
+  }
+}

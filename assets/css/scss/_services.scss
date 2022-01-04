@@ -1,0 +1,117 @@
+.services-section {
+  .text {
+    h1 {
+      font-weight: 900;
+      color: white;
+      font-size: 80px;
+      position: relative;
+      overflow: hidden;
+      height: 100px;
+      margin: 0;
+
+      @media (max-width: 940px) {
+        font-size: 70px;
+        height: 80px;
+      }
+
+      @media (max-width: 795px) {
+        font-size: 50px;
+        height: 70px;
+      }
+
+      @media (max-width: 700px) {
+        font-size: 40px;
+        height: 50px;
+      }
+
+      @media (max-width: 560px) {
+        font-size: 30px;
+        height: 50px;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 30px;
+        height: 50px;
+      }
+    }
+
+    .hidden-text {
+      position: absolute;
+      z-index: 200;
+      span {
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: gold;
+      }
+    }
+  }
+
+  .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    .service-item {
+      color: white;
+      opacity: 0;
+      margin-right: 54px;
+      max-width: 512px;
+      width: 40%;
+      margin-top: 78px;
+      transition: all 0.4s ease;
+      padding: 40px;
+
+      .service-title-container {
+        display: flex;
+        align-items: center;
+
+        .service-title {
+          font-weight: 900;
+          font-size: 16px;
+          background-color: #f7c801;
+          padding: 10px 24px;
+          margin-left: 1rem;
+          color: black;
+        }
+
+        video {
+          width: 66px;
+        }
+      }
+
+      .service-info {
+        margin-top: 7px;
+        line-height: 34px;
+      }
+
+      @media (max-width: 1097px) {
+        // max-width: 0px;
+        width: 45%;
+        margin: 34px 2%;
+        justify-content: center;
+        .service-title-container {
+          flex-direction: column;
+
+          .service-title {
+            width: 100%;
+            margin-left: 0px;
+            text-align: center;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+
+      @media (max-width: 900px) {
+        width: 100%;
+        max-width: initial;
+        margin-right: 0px;
+        padding: 15px;
+        margin: 34px 0px;
+      }
+
+      &:hover {
+        background: #131313;
+        box-shadow: 0px 0px 10px 4px #00000046;
+      }
+    }
+  }
+}
