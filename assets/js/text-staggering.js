@@ -84,7 +84,6 @@ const footer = gsap.timeline({
     scrollTrigger: {
         trigger: "footer .text",
         scroller: document.body, 
-  
     }
   })
   

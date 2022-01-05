@@ -1,0 +1,35 @@
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 10vh;
+  width: 100%;
+  z-index: 9999;
+  opacity: 0;
+  transform: translateY(-20px);
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5%;
+    align-items: center;
+
+    .logo-container {
+      img {
+        width: 80px;
+      }
+    }
+
+    .menus {
+      li {
+        display: inline-block;
+        margin-right: 20px;
+        a {
+          color: white;
+          text-decoration: none;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

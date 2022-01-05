@@ -31,6 +31,8 @@ body {
 .scroller {
   height: 100vh;
 }
+@import "scss/nav";
+
 @import "scss/helper";
 @import "scss/hero";
 @import "scss/feature";
