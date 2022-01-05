@@ -650,6 +650,13 @@ nav {
   }
 }
 
+@media (max-width: 400px) {
+  .partners-section .text h1 {
+    font-size: 30px;
+    height: 40px;
+  }
+}
+
 .partners-section .text .hidden-text {
   position: absolute;
   z-index: 200;
@@ -756,6 +763,13 @@ nav {
 @media (max-width: 500px) {
   .projects-section .text h1 {
     font-size: 35px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .projects-section .text h1 {
+    font-size: 30px;
     height: 40px;
   }
 }
@@ -891,6 +905,14 @@ nav {
 .projects-section .projects-container .project-item:hover .logo-container img {
   -webkit-filter: grayscale(0%);
           filter: grayscale(0%);
+}
+
+@media (max-width: 851px) {
+  .projects-section .projects-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .projects-section .button {
