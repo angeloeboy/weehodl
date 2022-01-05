@@ -245,56 +245,49 @@ project.forEach((project) => {
 
 
   $(project).mouseleave(() => {
-    let leave = gsap.timeline();
-    leave
-    .to($(".description"), {
-      css: {"max-height": "0px", "padding-bottom": "0px"},
-    })
-    .to($(project).children(".project-infos"), {
-      css: {"width": "100%", "z-index": "initial"},
-      duration: 0.1
-    })
-    .to($(project), {
-      css: {"z-index": "initial"},
-    })
-    .to($(project).children(".project-infos"), {
-      opacity: 0,
-      duration: 0.5
-    }, 0.1)
+
+    if(clicked){
+      let leave = gsap.timeline();
+      leave
+      .to($(".description"), {
+        css: {"max-height": "0px", "padding-bottom": "0px"},
+      })
+      .to($(project).children(".project-infos"), {
+        css: {"width": "100%", "z-index": "initial"},
+        duration: 0.1
+      })
+      .to($(project), {
+        css: {"z-index": "initial"},
+      })
+      .to($(project).children(".project-infos"), {
+        opacity: 0,
+        duration: 0.5
+      }, 0.1)
+    }else{
+      let leave = gsap.timeline();
+      leave
+      .to($(project).children(".project-infos"), {
+        opacity: 0,
+        duration: 0.5
+      }, 0.1)
+    }
+
     clicked = false
 
   })
   
 })
 
+var video = document.getElementById("video");
 
-// $(".more").click(() => {
-//   let tl = gsap.timeline();
-//     tl.to($(".description"), {
-//       css: {"max-height": "500px"},
-//       duration: 1
-//     })
-//     .from($(".description p"), {
-//       x: -10,
-//       opacity: 0,
-//     }, 0.2 )
-//     .to(".more", {
-//       css
-//     })
-// })
+if ( video.readyState === 4 ) {
+  console.log("loaded")
+  $(".globe-gif").css("display", "none")
 
+}else{
+  $(".globe-vid").css("display", "none")
 
-// $(".project-item").mouseleave(() => {
-//   gsap.to($(".description"), {
-//     css: {"max-height": "0px"},
-//   })
-
-
-  
-//   console.log("fklsdf")
-// })
-
-
+}
 
 
 

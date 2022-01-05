@@ -159,7 +159,8 @@ gsap.to($(".text-animation"), {
 }
 })
 
-
+$("#myVideo")[0].pause()
+$("#myVideo2")[0].pause()
 
 $(document).ready(function(){
   setTimeout(() => {

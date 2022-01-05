@@ -309,7 +309,6 @@ nav .container .menus li a {
   -webkit-transform: translate(-52%, -53%);
           transform: translate(-52%, -53%);
   z-index: 4;
-  opacity: 0.5;
 }
 
 .testing-2 #myVideo1 {
@@ -1019,15 +1018,8 @@ footer .text h1 {
 
 @media (max-width: 500px) {
   footer .text h1 {
-    font-size: 35px;
-    height: 40px;
-  }
-}
-
-@media (max-width: 400px) {
-  footer .text h1 {
-    font-size: 30px;
-    height: 40px;
+    font-size: 6vw;
+    height: 7vw;
   }
 }
 
