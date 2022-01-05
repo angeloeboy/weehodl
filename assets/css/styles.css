@@ -276,8 +276,8 @@ nav {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -49%);
-          transform: translate(-50%, -49%);
+  -webkit-transform: translate(-52%, -53%);
+          transform: translate(-52%, -53%);
   z-index: 4;
 }
 
