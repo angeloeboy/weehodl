@@ -309,6 +309,7 @@ nav .container .menus li a {
   -webkit-transform: translate(-52%, -53%);
           transform: translate(-52%, -53%);
   z-index: 4;
+  opacity: 0.5;
 }
 
 .testing-2 #myVideo1 {
