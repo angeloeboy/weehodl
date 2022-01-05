@@ -180,7 +180,6 @@ let changeVid  = () => {
     duration: 0.8
   })
 
-  console.log(":testing")
   $("#myVideo").fadeOut();
 
   setTimeout(() => {
@@ -199,7 +198,7 @@ ScrollTrigger.create({
 gsap.to($("nav"), {
   css: {"background-color": "black"},
   scrollTrigger: {
-    trigger: "#testing2",
+    trigger: ".testing-2",
     scroller: document.body, 
     start: "center center",
     scrub: true

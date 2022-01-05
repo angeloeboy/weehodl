@@ -36,6 +36,11 @@
         font-size: 35px;
         height: 40px;
       }
+
+      @media (max-width: 400px) {
+        font-size: 25px;
+        height: 30px;
+      }
     }
 
     .hidden-text {

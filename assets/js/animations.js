@@ -175,7 +175,6 @@ $('.multiple-items').slick({
 
 const fixedElem = document.querySelector('nav')
   bodyScrollBar.addListener(status => {
-    console.log(status)
     const { offset } = status
 
     fixedElem.style.top = `${offset.y}px`
@@ -196,9 +195,30 @@ $("nav p").click(() => {
 const project = gsap.utils.toArray('.project-item');
 
 project.forEach((project) => {
+  let clicked = false;
 
   $(project).children(".project-infos").children(".more").click(() => {
-    let tl = gsap.timeline();
+
+    if(clicked){
+      let leave = gsap.timeline();
+      leave
+      .to($(".description"), {
+        css: {"max-height": "0px", "padding-bottom": "0px"},
+      })
+      .to($(project).children(".project-infos"), {
+        css: {"width": "100%", "z-index": "initial"},
+        duration: 0.1
+      })
+      .to($(project), {
+        css: {"z-index": "initial"},
+      })
+      .to($(project).children(".project-infos"), {
+        opacity: 0,
+        duration: 0.5
+      }, 0.1)
+      clicked = false
+    }else{
+      let tl = gsap.timeline();
       tl
       .to($(project), {
         css: {"z-index": "70"},
@@ -207,19 +227,19 @@ project.forEach((project) => {
         css: {"max-height": "500px", "padding-bottom": "50px"},
         duration: 0.4
       },0.2)
-      .from($(project).children(".project-infos").children(".description").children("p"), {
-        x: -10,
-        opacity: 0,
-      }, 0.5)
 
+      clicked = true
     console.log("clicked")
+    }
+
+   
   })
 
 
   $(project).mouseenter(() => {
     gsap.to($(project).children(".project-infos"), {
       opacity: 1,
-      duration: 0.1
+      duration: 0.3
     })
   })
 
@@ -241,6 +261,7 @@ project.forEach((project) => {
       opacity: 0,
       duration: 0.5
     }, 0.1)
+    clicked = false
 
   })
   

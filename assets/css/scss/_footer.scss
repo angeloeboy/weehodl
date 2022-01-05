@@ -58,8 +58,12 @@ footer {
   }
 
   .links-container {
+    margin-top: 20vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     .links {
-      margin-top: 20vh;
       li {
         list-style-type: none;
         margin-top: 16px;
@@ -68,6 +72,20 @@ footer {
           text-transform: uppercase;
           text-decoration: none;
         }
+      }
+    }
+
+    .logo-container {
+      img {
+        width: 160px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      flex-direction: column-reverse;
+
+      .links {
+        text-align: center;
       }
     }
   }
