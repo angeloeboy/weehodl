@@ -151,6 +151,24 @@ $('.multiple-items').slick({
   arrows: false,
   autoplay: true,
   autoplaySpeed: 1000,
+
+  responsive: [
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+
+  ]
 });
 
 
@@ -188,18 +206,17 @@ project.forEach((project) => {
   $(project).children(".project-infos").children(".more").click(() => {
     let tl = gsap.timeline();
       tl
-      .to($(project).children(".project-infos"), {
-        css: {"width": "150%"}
-      }, 0.1)
+      .to($(project), {
+        css: {"z-index": "70"},
+      })
       .to($(project).children(".project-infos").children(".description"), {
         css: {"max-height": "500px", "padding-bottom": "50px"},
         duration: 1
-      })
+      },0.2)
       .from($(project).children(".project-infos").children(".description").children("p"), {
         x: -10,
         opacity: 0,
       }, 0.5)
-
 
     console.log("clicked")
   })
@@ -208,25 +225,27 @@ project.forEach((project) => {
   $(project).mouseenter(() => {
     gsap.to($(project).children(".project-infos"), {
       opacity: 1,
-      duration: 0.5
+      duration: 0.2
     })
   })
 
 
   $(project).mouseleave(() => {
-    let tl = gsap.timeline();
-    tl
+
+    let leave = gsap.timeline();
+    leave
     .to($(".description"), {
       css: {"max-height": "0px", "padding-bottom": "0px"},
     })
     .to($(project).children(".project-infos"), {
-      css: {"width": "100%"}
+      css: {"width": "100%", "z-index": "initial"}
+    })
+    .to($(project), {
+      css: {"z-index": "initial"},
     })
     .to($(project).children(".project-infos"), {
       opacity: 0,
-      duration: 0.5
-    })
-
+    }, 0.2)
 
   })
   

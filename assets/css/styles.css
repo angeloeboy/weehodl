@@ -893,10 +893,6 @@ nav {
   font-weight: bold;
 }
 
-.projects-section .projects-container .project-item:hover {
-  z-index: 68;
-}
-
 .projects-section .projects-container .project-item:hover .project-infos {
   height: initial;
   display: initial;

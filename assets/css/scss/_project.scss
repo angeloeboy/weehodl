@@ -126,7 +126,6 @@
         left: 50%;
         transform: translateX(-50%);
         opacity: 0;
-
         .more {
           img {
             width: 20px;
@@ -162,7 +161,6 @@
       }
 
       &:hover {
-        z-index: 68;
         .project-infos {
           height: initial;
           display: initial;
