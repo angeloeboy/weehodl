@@ -645,6 +645,13 @@ html {
   -webkit-text-stroke-color: gold;
 }
 
+@media (max-width: 904px) {
+  .services-section .text .hidden-text {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .services-section .text .title {
   height: initial;
 }

@@ -48,6 +48,11 @@
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: gold;
       }
+
+      @media (max-width: 904px) {
+        width: 100%;
+        text-align: center;
+      }
     }
 
     .title {

@@ -25,13 +25,6 @@ const featuresInfo = gsap.utils.toArray('.features-info-text');
 
 featuresInfo.forEach((item, i) => {
 
-  // let words = $(item).text().split(" ");
-  // $(item).text("")
-
-  // words.map((word) => {
-  //   $(item).append(`<div> <span>${word} </span></div> `)
-
-  // })
   
   about.from(item, 2, {
     x: -50,

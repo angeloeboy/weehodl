@@ -118,74 +118,74 @@ gsap.registerPlugin(ScrollTrigger);
 //   }, false);
 // });
 
-let scrolled = false;
+// let scrolled = false;
 
-ScrollTrigger.create({
-  trigger: $(".testing-2"),
-  start: "top",
-  onUpdate: (self) => {
-    if(self.progress.toFixed(3) < 0.1){
-      scrolled = false
+// ScrollTrigger.create({
+//   trigger: $(".testing-2"),
+//   start: "top",
+//   onUpdate: (self) => {
+//     if(self.progress.toFixed(3) < 0.1){
+//       scrolled = false
 
-    }else{
-      scrolled = true
-    }
+//     }else{
+//       scrolled = true
+//     }
 
-    if(self.progress.toFixed(3) > 0.1 && self.progress.toFixed(3) < 0.4 ){
-      $("#myVideo2")[0].play()
-      setTimeout(() => {
-        $("#myVideo2")[0].pause()
-      }, 1000);
-    }
+//     if(self.progress.toFixed(3) > 0.1 && self.progress.toFixed(3) < 0.4 ){
+//       $("#myVideo2")[0].play()
+//       setTimeout(() => {
+//         $("#myVideo2")[0].pause()
+//       }, 1000);
+//     }
 
-    if(self.progress.toFixed(3) == 0 && scrolled){
-      $("#myVideo2")[0].play()
-      setTimeout(() => {
-        $("#myVideo2")[0].currentTime = 0;
+//     if(self.progress.toFixed(3) == 0 && scrolled){
+//       $("#myVideo2")[0].play()
+//       setTimeout(() => {
+//         $("#myVideo2")[0].currentTime = 0;
 
-      }, 1000);
-    }
+//       }, 1000);
+//     }
 
-  }
-})
+//   }
+// })
 
-gsap.to($(".text-animation"), {
-  y: "-44%",
-  scrollTrigger: {
-    trigger: ".text-animation",
-    scroller: document.body, 
-    start: "center center",
-    scrub: 1
-}
-})
+// gsap.to($(".text-animation"), {
+//   y: "-44%",
+//   scrollTrigger: {
+//     trigger: ".text-animation",
+//     scroller: document.body, 
+//     start: "center center",
+//     scrub: 1
+// }
+// })
 
-$("#myVideo")[0].pause()
-$("#myVideo2")[0].pause()
+// $("#myVideo")[0].pause()
+// $("#myVideo2")[0].pause()
 
-$(document).ready(function(){
-  setTimeout(() => {
-    $(".text-animation")[0].play()
+// $(document).ready(function(){
+//   setTimeout(() => {
+//     $(".text-animation")[0].play()
     
-  }, 1000);
-});
+//   }, 1000);
+// });
 
-let playSecondVid = () => {
-  $("#myVideo")[0].play()
-}
+// let playSecondVid = () => {
+//   $("#myVideo")[0].play()
+// }
 
-let changeVid  = () => {
+// let changeVid  = () => {
 
 
 
-  $("#myVideo").fadeOut();
+//   $("#myVideo").fadeOut();
 
-  setTimeout(() => {
-  $("#myVideo2").fadeIn();
+//   setTimeout(() => {
+//   $("#myVideo2").fadeIn();
     
-  }, 500);
+//   }, 500);
 
 
-}
+// }
 
 ScrollTrigger.create({
   trigger: $(".testing-2"),

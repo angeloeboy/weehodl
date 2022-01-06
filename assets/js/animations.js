@@ -39,8 +39,6 @@ $(".contact-link").click(() => {
 
 
 
-
-
 let menuClicked = false
 
 const menuLinks = gsap.utils.toArray('.menus li');
@@ -139,7 +137,7 @@ gsap.to(".services-section", {
 
 
 
-
+//services
 const serviceItem = gsap.utils.toArray('.service-item');
 
 serviceItem.forEach((item, i) => {
@@ -404,10 +402,19 @@ if ( servicesIcon.readyState === 4 ) {
 }else{
   $("#services-icon").css("display", "none")
 
-
-
 }
 
+
+$("#wolf-animation")[0].pause();
+
+$(document).ready(() => {
+  $("#wolf-animation")[0].currentTime = 0;
+  setTimeout(() => {
+   $("#wolf-animation")[0].play();
+    
+  }, 1500);
+
+})
 
 
 
