@@ -187,7 +187,7 @@ projectsSectionSpan.forEach( (span, i) => {
       scrollTrigger: {
           trigger: span,
           scroller: document.body, 
-          start: "top 80%",
+          start: "top 30",
           stagger: 1
       },
     })
@@ -202,7 +202,7 @@ gsap.from(".projects-container", {
       trigger: ".projects-container",
       toggleActions: "play none none none",
       scroller: document.body, 
-      start: "top 80%",
+      start: "top 400",
   },
 })
 
