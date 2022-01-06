@@ -1,3 +1,68 @@
+//menu
+
+const serviceslink= document.querySelector('#services');
+const partnerslink= document.querySelector('#partners');
+const portfolio= document.querySelector('#portfolio');
+const contact= document.querySelector('#contact');
+
+var scrollServices = serviceslink.offsetTop;
+var scrollPartners = partnerslink.offsetTop - 500;
+var scrollPortfolio = portfolio.offsetTop - 500;
+var scrollContact = contact.offsetTop - 500;
+
+
+$(".services-link").click(() => {
+  bodyScrollBar.scrollTo(0,serviceslink.offsetTop - 130, 1000 )
+  $(".menus").toggleClass("active")
+  console.log(serviceslink.offsetTop)
+
+  console.log(scrollServices)
+
+})
+
+$(".partners-link").click(() => {
+  bodyScrollBar.scrollTo(0,partnerslink.offsetTop, 1000 )
+  $(".menus").toggleClass("active")
+
+})
+
+$(".portfolio-link").click(() => {
+  $(".menus").toggleClass("active")
+  bodyScrollBar.scrollTo(0,portfolio.offsetTop - 200, 1000 )
+})
+
+$(".contact-link").click(() => {
+  $(".menus").toggleClass("active")
+  bodyScrollBar.scrollTo(0,contact.offsetTop - 100, 1000 )
+})
+
+
+
+
+
+
+let menuClicked = false
+
+const menuLinks = gsap.utils.toArray('.menus li');
+
+
+
+$(".menu-icon").click(() => {
+  console.log("clickerd")
+
+  $(".menus").toggleClass("active")
+  
+  
+  menuLinks.forEach((link, i) => {
+    gsap.from(link, {
+      x: 20,
+      opacity: 0,
+      duration: 0.5,
+      delay: i * 0.2
+    })
+  })
+  
+})
 
 
 gsap.to("body", {
@@ -11,7 +76,6 @@ gsap.to("body", {
   },
 })
 
-
 gsap.to(".services-section", {
   css: { 'filter': 'invert(100%)' },
   duration: 0.5,
@@ -19,55 +83,77 @@ gsap.to(".services-section", {
       trigger: ".partners-section",
       toggleActions: "play none none reverse",
       scroller: document.body, 
-
   },
 })
 
 
 
 
-const featuresInfo = gsap.utils.toArray('.features-info-text');
+//Feature section
+// let wordsTitle = $(".feature-section .first").text().split(" ");
+// $(".feature-section .first").text("")
 
-featuresInfo.forEach((item, i) => {
+// wordsTitle.map((wordsTitle) => {
+//   $(".feature-section .first").append(`<div> <span>${wordsTitle} </span></div> `)
+// })
 
-  let words = $(item).text().split(" ");
-  $(item).text("")
+// const featuresInfoTitle = gsap.utils.toArray('.feature-section .first span');
 
-  words.map((word) => {
-    $(item).append(`<div> <span>${word} </span></div> `)
+// featuresInfoTitle.forEach( (span, i) => {
 
-  })
-});
+//   gsap.from(span, {
+//     y: "100%",
+//     duration: 1,
+//     delay: i * 0.1,
+//     scrollTrigger: {
+//         trigger: $('.feature-section .first span'),
+//         scroller: document.body, 
+//         start: "top center",
+//     },
+//   })
+// })
 
 
-const featuresInfoSpan = gsap.utils.toArray('.features-info-text span');
+// let offerTitle = $(".services-section .title").text().split(" ");
+// $(".services-section .title").text("")
 
-featuresInfoSpan.forEach( (span, i) => {
-    gsap.to(span, {
-      y: "0%",
-      duration: 1,
-      delay: i * 0.01,
-      scrollTrigger: {
-          trigger: ".features-info-text",
-          scroller: document.body, 
-      },
-    })
-})
+// offerTitle.map((offerTitle) => {
+//   $(".services-section .title").append(`<div> <span>${offerTitle} </span></div> `)
+// })
+
+// const offerTitleSpan = gsap.utils.toArray(".services-section .title span");
+
+// offerTitleSpan.forEach( (span, i) => {
+
+//   gsap.from(span, {
+//     y: "100%",
+//     duration: 1,
+//     delay: i * 0.1,
+//     scrollTrigger: {
+//         trigger: $(".services-section .title"),
+//         scroller: document.body, 
+//         start: "top center",
+//     },
+//   })
+// })
 
 
 
 
 const serviceItem = gsap.utils.toArray('.service-item');
+
 serviceItem.forEach((item, i) => {
-  gsap.to(item, { 
+
+  gsap.from(item, { 
+    duration: 0.7,
     y: 10,
-    opacity: 1,
-    delay: i * 0.3,
+    opacity: 0,
+    delay: i * 0.2,
     scrollTrigger: {
-      trigger: ".services-section",
+      trigger: ".services-container",
       toggleActions: "play pause none reverse",
       scroller: document.body, 
-      start: "top center",
+      start: "top 70%",
 
     }
   })
@@ -80,118 +166,47 @@ serviceItem.forEach((item, i) => {
 });
 
 
+//projects
+let projectsText = $(".second").text().split(" ");
+$(".second").text("")
 
-
-
-//video hover
-let vidCircle = $(".feature-section .circle");
-let videoHover = $(".video");
-
-
-$(".video").click(() => {
-  console.log("fdsfs")
+projectsText.map((word) => {
+  $(".second").append(`<div> <span>${word} </span></div> `)
 })
 
-gsap.set(vidCircle, { scale: 0, xPercent: -50, yPercent: -50 });
+const projectsSectionSpan = gsap.utils.toArray('.second div');
 
-videoHover.mouseenter((e) => {
-  gsap.to(vidCircle, 0.1, { scale: 1, opacity: 1 });
-});
+projectsSectionSpan.forEach( (span, i) => {
 
-
-videoHover.mouseleave((e) => {
-  gsap.to(vidCircle,  {
-    opacity: 0,    
-    ease: Power0.easeNone,  
-    duration: 0.1,
-  });
-
-});
-
-videoHover.mousemove((e) => {
-    positionCircle(e);
-});
-
-
-function positionCircle(e) {
-
-  var relX = e.offsetX 
-  var relY = e.offsetY
-
-  gsap.to(vidCircle, 0.05, { x: relX, y: relY, opacity: 1});
-}
-
-
-
-
-
-
-//play video on hover
-var figure = $(".video").hover( hoverVideo, hideVideo );
-
-function hoverVideo(e) {  
-    $('video', this).get(0).play(); 
-    $('video', this).on("ended", () => {
-      $('video', this).get(0).play(); 
+    gsap.from(span, {
+      y: "100%",
+      duration: 1,
+      opacity: 0,
+      delay: i * 0.1,
+      skewY: "1px",
+      scrollTrigger: {
+          trigger: span,
+          scroller: document.body, 
+          start: "top 80%",
+          stagger: 1
+      },
     })
-}
-
-function hideVideo(e) {
-    $('video', this).
-    get(0).pause(); 
-}
-
-
-//carousel 
-$('.multiple-items').slick({
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  adaptiveHeight: true,
-  arrows: false,
-  autoplay: true,
-  autoplaySpeed: 1000,
-
-  responsive: [
-    {
-      breakpoint: 800,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 500,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-
-  ]
-});
-
-
-
-const fixedElem = document.querySelector('nav')
-  bodyScrollBar.addListener(status => {
-    const { offset } = status
-
-    fixedElem.style.top = `${offset.y}px`
-  })
-
-
-$("nav p").click(() => {
-  gsap.to(".menus", {
-    opacity: 0,
-    y: "-100%"
-  })
 })
 
 
+gsap.from(".projects-container", {
+  y: 60,
+  opacity: 0,
+  duration: 1,
+  scrollTrigger: {
+      trigger: ".projects-container",
+      toggleActions: "play none none none",
+      scroller: document.body, 
+      start: "top 80%",
+  },
+})
 
-
-
+//project items animation
 const project = gsap.utils.toArray('.project-item');
 
 project.forEach((project) => {
@@ -222,7 +237,8 @@ project.forEach((project) => {
       tl
       .to($(project), {
         css: {"z-index": "70"},
-      })
+        duration: 0.1
+      }, 0.1)
       .to($(project).children(".project-infos").children(".description"), {
         css: {"max-height": "500px", "padding-bottom": "50px"},
         duration: 0.4
@@ -277,6 +293,99 @@ project.forEach((project) => {
   })
   
 })
+
+
+
+
+
+//video hover
+let vidCircle = $(".feature-section .circle");
+let videoHover = $(".video");
+
+$(".video").click(() => {
+  console.log("fdsfs")
+})
+
+gsap.set(vidCircle, { scale: 0, xPercent: -50, yPercent: -50 });
+
+videoHover.mouseenter((e) => {
+  gsap.to(vidCircle, 0.1, { scale: 1, opacity: 1 });
+});
+
+
+videoHover.mouseleave((e) => {
+  gsap.to(vidCircle,  {
+    opacity: 0,    
+    ease: Power0.easeNone,  
+    duration: 0.1,
+  });
+
+});
+
+videoHover.mousemove((e) => {
+    positionCircle(e);
+});
+
+
+function positionCircle(e) {
+
+  var relX = e.offsetX 
+  var relY = e.offsetY
+
+  gsap.to(vidCircle, 0.05, { x: relX, y: relY, opacity: 1});
+}
+
+
+
+//play video on hover
+var figure = $(".video").hover( hoverVideo, hideVideo );
+
+function hoverVideo(e) {  
+    $('video', this).get(0).play(); 
+    $('video', this).on("ended", () => {
+      $('video', this).get(0).play(); 
+    })
+}
+
+function hideVideo(e) {
+    $('video', this).
+    get(0).pause(); 
+}
+
+
+//carousel 
+$('.multiple-items').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  adaptiveHeight: true,
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 1000,
+
+  responsive: [
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+
+  ]
+});
+
+
+
+
+
 
 var video = document.getElementById("video");
 

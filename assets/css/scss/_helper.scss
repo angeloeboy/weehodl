@@ -4,3 +4,8 @@
   display: block;
   max-width: 2000px;
 }
+
+body,
+html {
+  overflow-x: hidden;
+}

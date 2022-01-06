@@ -175,11 +175,11 @@ let playSecondVid = () => {
 
 let changeVid  = () => {
 
-  gsap.to($("nav"), {
-    opacity: 1,
-    y: 0,
-    duration: 0.8
-  })
+  // gsap.to($("nav"), {
+  //   opacity: 1,
+  //   y: 0,
+  //   duration: 0.8
+  // })
 
   $("#myVideo").fadeOut();
 
@@ -197,7 +197,7 @@ ScrollTrigger.create({
 })
 
 gsap.to($("nav"), {
-  css: {"background-color": "black"},
+  css: {"background-color": "#0d0d0d"},
   scrollTrigger: {
     trigger: ".testing-2",
     scroller: document.body, 

@@ -5,15 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeeHODL</title>
-
+    <link rel="shortcut icon" type="image/png" href="assets/image/weehodl-logo.png"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
   <div class="scroller">
-
     <nav>
       <div class="container">
         <div class="logo-container">
@@ -21,15 +19,21 @@
         </div>
 
         <div class="menus">
-          <li><a href="#services">What wee offer</a></li>
-          <li><a href="#">Partners</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#" class="services-link">What wee offer</a></li>
+          <li><a href="#" class="partners-link">Partners</a></li>
+          <li><a href="#" class="portfolio-link">Portfolio</a></li>
+          <li><a href="#" class="contact-link">Contact</a></li>
 
+        </div>
+
+        <div class="menu-icon">
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
       </div>
     </nav>
-  <section class="hero-section">
+    <section class="hero-section">
       <div class="center" >
           <!-- <div class="circle"></div> -->
           <p class="subtitle">we are <span></span></p>
@@ -64,13 +68,11 @@
 
       </div>
   
-  </section>
+    </section>
 
 
   <section class="testing-2">
-    <!-- <img src="assets/image/text.png" alt=""> -->
     <video  muted class="text-animation" playsinline onended="playSecondVid()" >
-      <!-- <source src="assets/image/WEEHODL_ANM.mov" type="video/mp4"> -->
       <source src="assets/image/WEEHODL_No_shadow.webm" type="video/webm">
       <source src="assets/image/WEEHODL_ANM3.mov" type="video/mp4">
 
@@ -78,24 +80,25 @@
     </video>
 
     <video  muted id="myVideo" onended="changeVid()" playsinline autoplay >
-      <!-- <source src="assets/image/wolf_eyes_open.mp4" type="video/mp4"> -->
       <source src="assets/image/wolf_close-open.mp4"  type="video/mp4">
 
     </video>
 
     
     <video muted id="myVideo2" playsinline autoplay>
-      <!-- <source src="assets/image/wolf_eyes_move.mp4" type="video/mp4"> -->
       <source src="assets/image/wolf_look down.mp4"  type="video/mp4">
 
     </video>
 
   </section>
+
+
   <section class="feature-section container">
     <div class="text">
       <h1><span class="hidden-text">WEE HELP YOU</span></h1>
       <h1><span class="hidden-text"><span>ACHIEVE</span>  THE MOST</span></h1>
       <h1><span class="hidden-text">AMBITIOUS GOALS.</h1>
+      <!-- <h1 class="first">WEE HELP YOU ACHIEVE THE MOST AMBITIOUS GOALS.</h1> -->
     </div>
 
     <div class="text-container">
@@ -106,15 +109,14 @@
         </div>
         <video no-controls loop muted playsinline class="globe-vid" id="video">
           <source src="assets/image/globe-transparent.webm" type="video/webm" class="globe">
-          <source src="assets/image/globe-transparent.mov" type="video/mp4" class="globe">
-
-
           Your browser does not support the video tag.
         </video>
+
         <img src="assets/image/globe.gif" alt="" class="globe-gif">
 
       </div>
       <div class="features-info">
+ 
         <p class="features-info-text info-text-1"  >WeeHODL is a venture firm that invests, incubates, and accelerates early-stage Blockchain and Crypto projects. At WeeHODL, our committed team and driven community believe that decentralization is the cornerstone of blockchain technology. Our team is highly selective, and we support the early-stage projects in reaching their maximum potential.
     
         </p>
@@ -275,7 +277,7 @@
 
   </section>
 
-  <section class="partners-section">
+  <section class="partners-section" id="partners">
     <div class="container">
       <div class="text">
         <h1><span class="hidden-text">OUR <span>PARTNERS</span> </span></h1>
@@ -303,19 +305,20 @@
     </div>
   </section>
 
-  <section class="projects-section">
+  <section class="projects-section" id="portfolio">
     <div class="container">
       <div class="text">
-        <h1 class="first"><span class="hidden-text">OUR <span>PORTFOLIO</span> </span></h1>
+        <!-- <h1 class="first"><span class="hidden-text">OUR <span>PORTFOLIO</span> </span></h1> -->
+        <h1 class="first second">OUR PORTFOLIO</h1>
       </div>
 
-      
+  
       <div class="projects-container" >
 
 
         <div class="project-item">
           <div class="logo-container">
-            <img src="assets/image/logos/sidusheroes.svg" alt="">
+            <img src="assets/image/logos/sidusheroes.png" alt="">
             <p>SIDUS: The city of NFT Heroes</p>
 
           </div>
@@ -340,58 +343,7 @@
 
         <div class="project-item">
           <div class="logo-container">
-            <img src="assets/image/logos/kataninu.png" alt="">
-            <p>Katana Inu</p>
-
-          </div>
-          <div class="project-infos">
-            <div class="more"><img src="assets/image/arrow.png" alt=""></div>
-            <div class="description">
-              <h4 class="description-title">Description</h4>
-              <ul>
-                <li>Play to Earn Battle Royale NFT Game</li>
-                <li>Huge Meme-potential and Big Backers</li>
-
-              </ul>
-              <div class="number">
-                <h1 class="ath">11x</h1>
-                <p class="ath">ATH</p>
-              </div>
-
-
-            </div>
-          </div>
-        </div>
-
-        <div class="project-item">
-          <div class="logo-container">
-            <img src="assets/image/logos/gamespad.svg" alt="">
-            <p>Endless Battlefield none</p>
-
-          </div>
-          <div class="project-infos">
-            <div class="more"><img src="assets/image/arrow.png" alt=""></div>
-            <div class="description">
-              <h4 class="description-title">Description</h4>
-              <ul>
-                <li>A military strategy and exploration sandbox metaverse built on UE engine</li>
-                <li>Great FPS graphics and listed on Steam</li>
-
-              </ul>
-              <div class="number">
-                <h3 class="ath">YET TO LIFT OFF</h3>
-                <p class="ath">ATH</p>
-              </div>
-
-
-            </div>
-          </div>
-        </div>
-
-
-        <div class="project-item">
-          <div class="logo-container">
-            <img src="assets/image/logos/gamespad.svg" alt="">
+            <img src="assets/image/logos/gamespad.jpeg" alt="">
             <p>GamesPad</p>
 
           </div>
@@ -413,6 +365,467 @@
             </div>
           </div>
         </div>
+
+        <div class="project-item">
+          <div class="logo-container">
+            <img src="assets/image/logos/kataninu.png" alt="">
+            <p>Katana Inu</p>
+
+          </div>
+
+          <div class="project-infos">
+            <div class="more"><img src="assets/image/arrow.png" alt=""></div>
+            <div class="description">
+              <h4 class="description-title">Description</h4>
+              <ul>
+                <li>Play to Earn Battle Royale NFT Game</li>
+                <li>Huge Meme-potential and Big Backers</li>
+
+              </ul>
+              <div class="number">
+                <h1 class="ath">11x</h1>
+                <p class="ath">ATH</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="logo-container">
+            <img src="assets/image/logos/gunzilla.svg" alt="">
+            <p>Gunzilla</p>
+
+          </div>
+          <div class="project-infos">
+            <div class="more"><img src="assets/image/arrow.png" alt=""></div>
+            <div class="description">
+              <h4 class="description-title">Description</h4>
+              <ul>
+                <li>AAA game development company with visionary leadership</li>
+                <li>International and highly experienced team </li>
+
+              </ul>
+              <div class="number">
+                <h3 class="ath">YET TO LIFT OFF</h3>
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="logo-container">
+            <img src="assets/image/logos/fota.png" alt="">
+            <p>FOTA - Fight of the Ages</p>
+
+          </div>
+          <div class="project-infos">
+            <div class="more"><img src="assets/image/arrow.png" alt=""></div>
+            <div class="description">
+              <h4 class="description-title">Description</h4>
+              <ul>
+                <li>3D Metaverse Game of the MOBA-RPG genre</li>
+                <li>An established game concept with a familiar marketplace and community</li>
+
+              </ul>
+              <div class="number">
+                <h3 class="ath">YET TO LIFT OFF</h3>
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="logo-container">
+            <img src="assets/image/logos/metamall.jpeg" alt="">
+            <p>Metamall</p>
+
+          </div>
+          <div class="project-infos">
+            <div class="more"><img src="assets/image/arrow.png" alt=""></div>
+            <div class="description">
+              <h4 class="description-title">Description</h4>
+              <ul>
+                <li>A metaverse platform that aims at integrating VR, NFTs, and DeFi</li>
+                <li>Highly skilled and professional team with multiple VR patents</li>
+
+              </ul>
+              <div class="number">
+                <h3 class="ath">YET TO LIFT OFF</h3>
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="project-item">
+          <div class="logo-container">
+            <img src="assets/image/logos/leagueofacients.png" alt="">
+            <p>League of Ancients</p>
+
+          </div>
+          <div class="project-infos">
+            <div class="more"><img src="assets/image/arrow.png" alt=""></div>
+            <div class="description">
+              <h4 class="description-title">Description</h4>
+              <ul>
+                <li>MOBA NFT-game featuring Free-to-Play and Play-to-Earn</li>
+                <li>Huge e-sports potential and familiar fanbase</li>
+
+              </ul>
+              <div class="number">
+                <h1 class="ath">35x</h1>
+                <p class="ath">ATH</p>
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="logo-container">
+            <img src="assets/image/logos/5ire.png" alt="">
+            <p>5ireChain</p>
+
+          </div>
+          <div class="project-infos">
+            <div class="more"><img src="assets/image/arrow.png" alt=""></div>
+            <div class="description">
+              <h4 class="description-title">Description</h4>
+              <ul>
+                <li>A sustainability-driven blockchain with reputation-based mechanisms</li>
+                <li>Great Team, Tier 1 smart contract platforms that aid in UN's 2030 SD goals</li>
+
+              </ul>
+              <div class="number">
+                <h3 class="ath">YET TOP LIFT OFF</h3>
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="logo-container">
+            <img src="assets/image/logos/thekillboxgame.png" alt="">
+            <p>The KillBox Game</p>
+
+          </div>
+          <div class="project-infos">
+            <div class="more"><img src="assets/image/arrow.png" alt=""></div>
+            <div class="description">
+              <h4 class="description-title">Description</h4>
+              <ul>
+                <li>One of the earliest blockchain mobile first-person shooter game with tradable NFTs</li>
+                <li>Interactive 360-degree arena combat experience with VR capabilities</li>
+
+              </ul>
+              <div class="number">
+                <h1 class="ath">75x</h1>
+                <p class="ath">ath</p>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="logo-container">
+            <img src="assets/image/logos/endless-battlefield.png" alt="">
+            <p>Endless Battlefield</p>
+
+          </div>
+          <div class="project-infos">
+            <div class="more"><img src="assets/image/arrow.png" alt=""></div>
+            <div class="description">
+              <h4 class="description-title">Description</h4>
+              <ul>
+                <li>A military strategy and exploration sandbox metaverse built on UE engine</li>
+                <li>Great FPS graphics and listed on Steam</li>
+
+              </ul>
+              <div class="number">
+                <h3 class="ath">YET TO LIFT OFF</h3>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="logo-container">
+            <img src="assets/image/logos/defihorse.jpg" alt="">
+            <p>DeFi Horse</p>
+
+          </div>
+          <div class="project-infos">
+            <div class="more"><img src="assets/image/arrow.png" alt=""></div>
+            <div class="description">
+              <h4 class="description-title">Description</h4>
+              <ul>
+                <li>A metaverse e-sport horse race game built on the blockchain</li>
+                <li>High-quality NFTs with a well-designed tier system and a great regional community</li>
+
+              </ul>
+              <div class="number">
+                <h3 class="ath">YET TO LIFT OFF</h3>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="logo-container">
+            <img src="assets/image/logos/pandora.png" alt="">
+            <p>Pandora</p>
+
+          </div>
+          <div class="project-infos">
+            <div class="more"><img src="assets/image/arrow.png" alt=""></div>
+            <div class="description">
+              <h4 class="description-title">Description</h4>
+              <ul>
+                <li>First-Person-Shooter MMORPG with Open-World Exploration</li>
+                <li>Great Game Development Team and huge long-term potential</li>
+
+              </ul>
+              <div class="number">
+                <h3 class="ath">YET TO LIFT OFF</h3>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+        
+        <div class="project-item">
+          <div class="logo-container">
+            <img src="assets/image/logos/guildfi.png" alt="">
+            <p>GuildFi</p>
+
+          </div>
+          <div class="project-infos">
+            <div class="more"><img src="assets/image/arrow.png" alt=""></div>
+            <div class="description">
+              <h4 class="description-title">Description</h4>
+              <ul>
+                <li>A Web3 infrastructure to connect games, NFTs, and communities</li>
+                <li>Great product with a smooth interface and huge backers</li>
+
+              </ul>
+              <div class="number">
+                <h1 class="ath">34x</h1>
+                <p class="ath">ath</p>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+        
+        <div class="project-item">
+          <div class="logo-container">
+            <img src="assets/image/logos/atlantis.png" alt="">
+            <p>Atlantis Metaverse</p>
+
+          </div>
+          <div class="project-infos">
+            <div class="more"><img src="assets/image/arrow.png" alt=""></div>
+            <div class="description">
+              <h4 class="description-title">Description</h4>
+              <ul>
+                <li>A virtual universe inspired by the lost Atlantis civilization</li>
+                <li>Great NFT artwork and utilization with turn-based RPG mechanism</li>
+
+              </ul>
+              <div class="number">
+                <h1 class="ath">8x</h1>
+                <p class="ath">ath</p>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="logo-container">
+            <img src="assets/image/logos/portal.jpeg" alt="">
+            <p>Portal</p>
+
+          </div>
+          <div class="project-infos">
+            <div class="more"><img src="assets/image/arrow.png" alt=""></div>
+            <div class="description">
+              <h4 class="description-title">Description</h4>
+              <ul>
+                <li>A self-hosted Layer 2 wallet and true cross-chain DEX on Bitcoin</li>
+                <li>Great technology, amazing team, and big backers</li>
+
+              </ul>
+              <div class="number">
+                <h3 class="ath">YET TO LIFT OFF</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="logo-container">
+            <img src="assets/image/logos/coinfantasy.png" alt="">
+            <p>Coin Fantasy</p>
+
+          </div>
+          <div class="project-infos">
+            <div class="more"><img src="assets/image/arrow.png" alt=""></div>
+            <div class="description">
+              <h4 class="description-title">Description</h4>
+              <ul>
+                <li>A multi-chain portfolio based fantasy gaming platform for financial markets using NFTs</li>
+                <li>Instant reward system and huge market potential</li>
+
+              </ul>
+              <div class="number">
+                <h3 class="ath">YET TO LIFT OFF</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="logo-container">
+            <img src="assets/image/logos/fomolab.png" alt="">
+            <p>FOMO Lab</p>
+
+          </div>
+          <div class="project-infos">
+            <div class="more"><img src="assets/image/arrow.png" alt=""></div>
+            <div class="description">
+              <h4 class="description-title">Description</h4>
+              <ul>
+                <li>A one-stop DeFi NFT platform, management company, and creator studio</li>
+                <li>A complete ecosystem with a huge market potential</li>
+
+              </ul>
+              <div class="number">
+                <h1 class="ath">9X</h1>
+                <p class="ath">ath</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="logo-container">
+            <img src="assets/image/logos/meta-spatial.png" alt="">
+            <p>Meta Spatial</p>
+
+          </div>
+          <div class="project-infos">
+            <div class="more"><img src="assets/image/arrow.png" alt=""></div>
+            <div class="description">
+              <h4 class="description-title">Description</h4>
+              <ul>
+                <li>A Metaverse virtual universe connected by a virtual bridge called the Spatial Portal</li>
+                <li>DAO Community and VR, AR, and MR technologies incorporation</li>
+
+              </ul>
+              <div class="number">
+                <h1 class="ath">58x</h1>
+                <p class="ath">ath</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="logo-container">
+            <img src="assets/image/logos/spacey2025.png" alt="">
+            <p>SpaceY2025</p>
+
+          </div>
+          <div class="project-infos">
+            <div class="more"><img src="assets/image/arrow.png" alt=""></div>
+            <div class="description">
+              <h4 class="description-title">Description</h4>
+              <ul>
+                <li>The first tower defense metaverse NFT sandbox game</li>
+                <li>Early game demo and good community backing </li>
+
+              </ul>
+              <div class="number">
+                <h1 class="ath">39x</h1>
+                <p class="ath">ath</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="logo-container">
+            <img src="assets/image/logos/openorigins.png" alt="">
+            <p>Operon Origins</p>
+
+          </div>
+          <div class="project-infos">
+            <div class="more"><img src="assets/image/arrow.png" alt=""></div>
+            <div class="description">
+              <h4 class="description-title">Description</h4>
+              <ul>
+                <li>NFT card-based combat game</li>
+                <li>Original concept and 'easy to learn, hard to master' gameplay</li>
+
+              </ul>
+              <div class="number">
+                <h1 class="ath">24x</h1>
+                <p class="ath">ath</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="logo-container">
+            <img src="assets/image/logos/onepad.png" alt="">
+            <p>Onepad</p>
+
+          </div>
+          <div class="project-infos">
+            <div class="more"><img src="assets/image/arrow.png" alt=""></div>
+            <div class="description">
+              <h4 class="description-title">Description</h4>
+              <ul>
+                <li>One of the earliest decentralized token launchpad on Harmony</li>
+                <li>Fair token allocation model ensuring guaranteed IDO allocation</li>
+
+              </ul>
+              <div class="number">
+                <h3 class="ath">YET TO LIFT OFF</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <div class="show-more button">
@@ -421,7 +834,7 @@
     </div>
   </section>
 
-  <footer>
+  <footer id="contact">
     <div class="container">
       <div class="text">
         <h1><span class="hidden-text">LET'S BUILD TOGETHER   </span></h1>
@@ -432,8 +845,8 @@
 
       <div class="links-container">
         <div class="links">
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Instagram</a></li>
+            <li><a href="https://twitter.com/WeeHODL">Twitter</a></li>
+            <li><a href="https://medium.com/@weehodl ">Medium</a></li>
             <li><a href="#">Email</a></li>
 
         </div>
@@ -445,6 +858,7 @@
     
   </footer>
 
+  </div>
 
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>

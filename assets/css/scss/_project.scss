@@ -66,6 +66,24 @@
         -webkit-text-stroke-color: black;
       }
     }
+
+    .second {
+      height: initial;
+      text-align: center;
+      margin: 0 auto;
+
+      div {
+        display: inline-block;
+
+        &:nth-child(2) {
+          color: transparent;
+          -webkit-text-stroke-width: 1px;
+          -webkit-text-stroke-color: black;
+          .span {
+          }
+        }
+      }
+    }
   }
 
   .projects-container {
@@ -128,12 +146,12 @@
         opacity: 0;
 
         .more {
-          margin-top: 25%;
+          margin-top: 20%;
           img {
             width: 20px;
             margin: 0 auto;
             display: block;
-            padding-bottom: 20px;
+            padding-bottom: 25px;
           }
         }
         .description {

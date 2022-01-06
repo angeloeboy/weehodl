@@ -49,14 +49,29 @@
         -webkit-text-stroke-color: gold;
       }
     }
+
+    .title {
+      height: initial;
+      div {
+        display: inline-block;
+        position: relative;
+        // height: 100px;
+        overflow: hidden;
+        span {
+          display: inline-block;
+          opacity: 1;
+          line-height: 100%;
+        }
+      }
+    }
   }
 
   .services-container {
     display: flex;
     flex-wrap: wrap;
+
     .service-item {
       color: white;
-      opacity: 0;
       margin-right: 54px;
       max-width: 512px;
       width: 40%;
