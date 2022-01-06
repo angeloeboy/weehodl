@@ -175,11 +175,7 @@ let playSecondVid = () => {
 
 let changeVid  = () => {
 
-  // gsap.to($("nav"), {
-  //   opacity: 1,
-  //   y: 0,
-  //   duration: 0.8
-  // })
+
 
   $("#myVideo").fadeOut();
 

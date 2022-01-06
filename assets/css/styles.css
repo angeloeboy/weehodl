@@ -698,7 +698,8 @@ html {
   color: black;
 }
 
-.services-section .services-container .service-item .service-title-container video {
+.services-section .services-container .service-item .service-title-container video,
+.services-section .services-container .service-item .service-title-container img {
   width: 50px;
   max-height: 60px;
 }

@@ -385,18 +385,29 @@ $('.multiple-items').slick({
 
 
 
-
-
 var video = document.getElementById("video");
 
 if ( video.readyState === 4 ) {
-  console.log("loaded")
   $(".globe-gif").css("display", "none")
 
 }else{
   $(".globe-vid").css("display", "none")
 
 }
+
+var servicesIcon = document.getElementById("services-icon");
+
+if ( servicesIcon.readyState === 4 ) {
+  console.log("loaded")
+  $(".services-icon-static").css("display", "none")
+
+}else{
+  $("#services-icon").css("display", "none")
+
+
+
+}
+
 
 
 
