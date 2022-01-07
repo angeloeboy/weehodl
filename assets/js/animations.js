@@ -11,41 +11,7 @@ var scrollPortfolio = portfolio.offsetTop - 500;
 var scrollContact = contact.offsetTop - 500;
 
 
-$(".services-link").click(() => {
-  bodyScrollBar.scrollTo(0,serviceslink.offsetTop - 130, 1000 )
-  $(".menus").toggleClass("active")
-  console.log(serviceslink.offsetTop)
-
-  console.log(scrollServices)
-
-})
-
-$(".partners-link").click(() => {
-  bodyScrollBar.scrollTo(0,partnerslink.offsetTop, 1000 )
-  $(".menus").toggleClass("active")
-
-})
-
-$(".portfolio-link").click(() => {
-  $(".menus").toggleClass("active")
-  bodyScrollBar.scrollTo(0,portfolio.offsetTop - 200, 1000 )
-})
-
-$(".contact-link").click(() => {
-  $(".menus").toggleClass("active")
-  bodyScrollBar.scrollTo(0,contact.offsetTop - 100, 1000 )
-})
-
-
-
-
-let menuClicked = false
-
-const menuLinks = gsap.utils.toArray('.menus li');
-
-
-
-$(".menu-icon").click(() => {
+let menuClickedFunction = () => {
   console.log("clickerd")
 
   // $(".menus").toggleClass("active")
@@ -89,7 +55,43 @@ $(".menu-icon").click(() => {
   }
   
 
-  
+} 
+
+$(".services-link").click(() => {
+  bodyScrollBar.scrollTo(0,serviceslink.offsetTop - 130, 1000 )
+  menuClickedFunction();
+
+
+})
+
+$(".partners-link").click(() => {
+  bodyScrollBar.scrollTo(0,partnerslink.offsetTop, 1000 )
+  menuClickedFunction();
+
+})
+
+$(".portfolio-link").click(() => {
+  menuClickedFunction();
+  bodyScrollBar.scrollTo(0,portfolio.offsetTop - 200, 1000 )
+})
+
+$(".contact-link").click(() => {
+  menuClickedFunction();
+  bodyScrollBar.scrollTo(0,contact.offsetTop - 100, 1000 )
+})
+
+
+
+
+let menuClicked = false
+
+const menuLinks = gsap.utils.toArray('.menus li');
+
+
+
+$(".menu-icon").click(() => {
+
+  menuClickedFunction();
 })
 
 
@@ -214,7 +216,7 @@ projectsSectionSpan.forEach( (span, i) => {
       scrollTrigger: {
           trigger: span,
           scroller: document.body, 
-          start: "top 30",
+          start: "top bottom",
           stagger: 1
       },
     })
@@ -229,7 +231,7 @@ gsap.from(".projects-container", {
       trigger: ".projects-container",
       toggleActions: "play none none none",
       scroller: document.body, 
-      start: "top 400",
+      start: "top bottom",
   },
 })
 
@@ -443,6 +445,12 @@ $(document).ready(() => {
     
   }, 1500);
 
+})
+
+
+//scroll to top
+$(".scroll-to-top").click(() => {
+  bodyScrollBar.scrollTo(0, 0, 1000 )
 })
 
 

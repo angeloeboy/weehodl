@@ -21,16 +21,16 @@ ScrollTrigger.scrollerProxy(document.body, {
 bodyScrollBar.addListener(ScrollTrigger.update);
 
 const fixedElem = document.querySelector('nav')
-  bodyScrollBar.addListener(status => {
-    const { offset } = status
-
-    fixedElem.style.top = `${offset.y}px`
-  })
+const scrollToTop = $(".scroll-to-top")
 
 
-$("nav p").click(() => {
-  gsap.to(".menus", {
-    opacity: 0,
-    y: "-100%"
-  })
+bodyScrollBar.addListener(status => {
+  const { offset } = status
+  fixedElem.style.top = `${offset.y}px`
+  // scrollToTop.style.top = `${offset.y}px`
+
 })
+
+
+
+
