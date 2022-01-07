@@ -97,6 +97,7 @@ nav .container .menu-icon {
             transform: translateX(100%);
     -webkit-transition: all 0.7s cubic-bezier(0.17, 0.94, 0.26, 0.98);
     transition: all 0.7s cubic-bezier(0.17, 0.94, 0.26, 0.98);
+    display: none;
   }
   nav .container .menus li {
     margin: 1rem 0px;
@@ -143,8 +144,10 @@ nav .container .menu-icon {
 }
 
 body,
-html {
+html,
+.scroller {
   overflow-x: hidden;
+  max-width: 100%;
 }
 
 .hero-section {

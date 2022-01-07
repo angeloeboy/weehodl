@@ -50,7 +50,7 @@ nav {
         padding-left: 5%;
         transform: translateX(100%);
         transition: all 0.7s cubic-bezier(0.17, 0.94, 0.26, 0.98);
-
+        display: none;
         li {
           margin: 1rem 0px;
         }
@@ -84,4 +84,5 @@ nav {
 
 .active {
   transform: translateX(0%) !important;
+  // display: flex !important;
 }

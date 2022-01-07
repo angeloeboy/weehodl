@@ -1,8 +1,8 @@
 gsap.registerPlugin(ScrollTrigger);
 
 const scroller = document.querySelector('.scroller');
-let bodyScrollBar = Scrollbar.init(document.body, { damping: 0.05, delegateTo: document });
-// let bodyScrollBar = Scrollbar.init(scroller, { damping: 0.05, delegateTo: document });
+// let bodyScrollBar = Scrollbar.init(document.body, { damping: 0.05, delegateTo: document });
+let bodyScrollBar = Scrollbar.init(scroller, { damping: 0.05, delegateTo: document });
 
  
 bodyScrollBar.setPosition(0, 0);
@@ -19,7 +19,6 @@ ScrollTrigger.scrollerProxy(document.body, {
 
 
 bodyScrollBar.addListener(ScrollTrigger.update);
-
 
 const fixedElem = document.querySelector('nav')
   bodyScrollBar.addListener(status => {

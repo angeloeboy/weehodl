@@ -48,17 +48,47 @@ const menuLinks = gsap.utils.toArray('.menus li');
 $(".menu-icon").click(() => {
   console.log("clickerd")
 
-  $(".menus").toggleClass("active")
-  
-  
-  menuLinks.forEach((link, i) => {
-    gsap.from(link, {
-      x: 20,
-      opacity: 0,
-      duration: 0.5,
-      delay: i * 0.2
+  // $(".menus").toggleClass("active")
+
+
+  if(!menuClicked){
+    $(".menus").css("display", "flex")
+
+    setTimeout(() => {
+      $(".menus").toggleClass("active")
+    }, 300);
+
+    menuClicked = true
+
+    menuLinks.forEach((link, i) => {
+      gsap.from(link, {
+        x: 20,
+        opacity: 0,
+        duration: 0.5,
+        delay: i * 0.2
+      })
     })
-  })
+
+  }else{
+    $(".menus").toggleClass("active")
+
+    menuLinks.forEach((link, i) => {
+      gsap.to(link, {
+        x: 0,
+        duration: 0.5,
+        delay: i * 0.2
+      })
+    })
+
+    setTimeout(() => {
+      $(".menus").css("display", "none")
+
+    }, 300);
+    menuClicked = false
+
+  }
+  
+
   
 })
 
@@ -70,7 +100,6 @@ gsap.to("body", {
       trigger: ".partners-section",
       toggleActions: "play none none reverse",
       scroller: document.body, 
-
   },
 })
 
