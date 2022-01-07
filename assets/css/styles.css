@@ -150,6 +150,10 @@ html,
   max-width: 100%;
 }
 
+.yellow {
+  color: #f7c801;
+}
+
 .hero-section {
   padding: 100px 0px;
   background-image: url("../image/wolf.png");
@@ -363,6 +367,12 @@ html,
   position: relative;
   overflow: hidden;
   height: 100vh;
+}
+
+@media (max-width: 500px) {
+  .testing-2 {
+    height: 70vh !important;
+  }
 }
 
 .testing-2 video {
@@ -591,6 +601,12 @@ html,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .feature-section .text-container {
+    margin-top: 0px;
   }
 }
 
@@ -980,7 +996,6 @@ html,
   width: 23%;
   position: relative;
   z-index: 66;
-  min-width: 300px;
 }
 
 @media (max-width: 700px) {
@@ -1026,7 +1041,7 @@ html,
   position: absolute;
   top: -25%;
   background-color: white;
-  width: 100%;
+  width: 110%;
   padding-top: calc(100px + 30%);
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -1035,7 +1050,7 @@ html,
 }
 
 .projects-section .projects-container .project-item .project-infos .more {
-  margin-top: 20%;
+  margin-top: calc(20% - 20px);
 }
 
 .projects-section .projects-container .project-item .project-infos .more img {
@@ -1043,6 +1058,10 @@ html,
   margin: 0 auto;
   display: block;
   padding-bottom: 25px;
+}
+
+.projects-section .projects-container .project-item .project-infos .larger {
+  margin-top: 20%;
 }
 
 .projects-section .projects-container .project-item .project-infos .description {
@@ -1073,6 +1092,16 @@ html,
   font-weight: bold;
 }
 
+.projects-section .projects-container .project-item .project-infos .description .number p {
+  text-transform: uppercase;
+}
+
+@media (max-width: 500px) {
+  .projects-section .projects-container .project-item .project-infos {
+    width: 110% !important;
+  }
+}
+
 .projects-section .projects-container .project-item:hover .project-infos {
   height: initial;
   display: initial;
@@ -1083,7 +1112,13 @@ html,
           filter: grayscale(0%);
 }
 
-@media (max-width: 851px) {
+@media (max-width: 1140px) {
+  .projects-section .projects-container .project-item {
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 1140px) {
   .projects-section .projects-container {
     -webkit-box-pack: center;
         -ms-flex-pack: center;

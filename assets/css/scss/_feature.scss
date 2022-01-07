@@ -56,21 +56,6 @@
         -webkit-text-stroke-color: gold;
       }
     }
-
-    // .first {
-    //   height: initial;
-    //   div {
-    //     display: inline-block;
-    //     position: relative;
-    //     // height: 100px;
-    //     overflow: hidden;
-    //     span {
-    //       display: inline-block;
-    //       opacity: 1;
-    //       line-height: 100%;
-    //     }
-    //   }
-    // }
   }
   .text-container {
     margin-top: 50px;
@@ -150,6 +135,10 @@
 
     @media (max-width: 1000px) {
       flex-direction: column;
+    }
+
+    @media (max-width: 500px) {
+      margin-top: 0px;
     }
   }
 }

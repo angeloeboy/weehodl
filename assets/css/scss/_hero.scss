@@ -8,6 +8,7 @@
   overflow: hidden;
   margin: 0 auto;
   background-attachment: scroll;
+
   .center {
     position: relative;
     top: 50%;
@@ -195,6 +196,7 @@
   overflow: hidden;
   margin: 0 auto;
   background-repeat: no-repeat;
+
   img {
     width: 95%;
     position: absolute;
@@ -208,6 +210,10 @@
   position: relative;
   overflow: hidden;
   height: 100vh;
+
+  @media (max-width: 500px) {
+    height: 70vh !important;
+  }
 
   video {
     position: absolute;

@@ -10,49 +10,51 @@ var scrollPartners = partnerslink.offsetTop - 500;
 var scrollPortfolio = portfolio.offsetTop - 500;
 var scrollContact = contact.offsetTop - 500;
 
+let width = $(window).width();
+console.log(width)
 
 let menuClickedFunction = () => {
-  console.log("clickerd")
 
-  // $(".menus").toggleClass("active")
-
-
-  if(!menuClicked){
-    $(".menus").css("display", "flex")
-
-    setTimeout(() => {
+  if(width <= 800){
+    if(!menuClicked){
+      $(".menus").css("display", "flex")
+  
+      setTimeout(() => {
+        $(".menus").toggleClass("active")
+      }, 300);
+  
+      menuClicked = true
+  
+      menuLinks.forEach((link, i) => {
+        gsap.from(link, {
+          x: 20,
+          opacity: 0,
+          duration: 0.5,
+          delay: i * 0.2
+        })
+      })
+  
+    }else{
       $(".menus").toggleClass("active")
-    }, 300);
-
-    menuClicked = true
-
-    menuLinks.forEach((link, i) => {
-      gsap.from(link, {
-        x: 20,
-        opacity: 0,
-        duration: 0.5,
-        delay: i * 0.2
+  
+      menuLinks.forEach((link, i) => {
+        gsap.to(link, {
+          x: 0,
+          duration: 0.5,
+          delay: i * 0.2
+        })
       })
-    })
-
-  }else{
-    $(".menus").toggleClass("active")
-
-    menuLinks.forEach((link, i) => {
-      gsap.to(link, {
-        x: 0,
-        duration: 0.5,
-        delay: i * 0.2
-      })
-    })
-
-    setTimeout(() => {
-      $(".menus").css("display", "none")
-
-    }, 300);
-    menuClicked = false
-
+  
+      setTimeout(() => {
+        $(".menus").css("display", "none")
+  
+      }, 300);
+      menuClicked = false
+  
+    }
   }
+
+
   
 
 } 
@@ -60,8 +62,6 @@ let menuClickedFunction = () => {
 $(".services-link").click(() => {
   bodyScrollBar.scrollTo(0,serviceslink.offsetTop - 130, 1000 )
   menuClickedFunction();
-
-
 })
 
 $(".partners-link").click(() => {
@@ -209,15 +209,14 @@ projectsSectionSpan.forEach( (span, i) => {
 
     gsap.from(span, {
       y: "100%",
-      duration: 1,
+      duration: 0.8,
       opacity: 0,
-      delay: i * 0.1,
+      delay: i * 0.08,
       skewY: "1px",
       scrollTrigger: {
           trigger: span,
           scroller: document.body, 
           start: "top bottom",
-          stagger: 1
       },
     })
 })
@@ -404,7 +403,10 @@ $('.multiple-items').slick({
       breakpoint: 500,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        autoplay: true,
+
+        
       }
     }
 
@@ -450,6 +452,10 @@ $(document).ready(() => {
 
 //scroll to top
 $(".scroll-to-top").click(() => {
+  bodyScrollBar.scrollTo(0, 0, 1000 )
+})
+
+$("nav .logo-container").click(() => {
   bodyScrollBar.scrollTo(0, 0, 1000 )
 })
 

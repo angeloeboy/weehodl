@@ -56,56 +56,6 @@ services.from('.services-section .hidden-text', {
 })
 
 
-// let offerTitle = $(".services-section .title").text().split(" ");
-// $(".services-section .title").text("")
-
-// offerTitle.map((offerTitle, i) => {
-
-
-//   $(".services-section .title").append(`<div> <span>${offerTitle} </span></div> `)
-//   if(i == 1){
-//     $(".services-section .title").append(`<div> <span> <i> ${offerTitle} </i> </span></div> `)
-//   }
-// })
-
-// const offerTitleSpan = gsap.utils.toArray(".services-section .title span");
-
-// offerTitleSpan.forEach( (span, i) => {
-
-//   gsap.from(span, {
-//     y: "110%",
-//     duration: 1,
-//     delay: i * 0.1,
-//     scrollTrigger: {
-//         trigger: $(".services-section .title"),
-//         scroller: document.body, 
-//         start: "top center",
-//     },
-//   })
-// })
-
-
-
-//projects section
-// const projects = gsap.timeline({
-//   scrollTrigger: {
-//       trigger: ".projects-section .text",
-//       scroller: document.body, 
-//       start: "top center",
-//   }
-// })
-
-
-
-// projects.staggerFrom('.projects-section .hidden-text',1, {y:"100%", ease:Power4.easeOut}, 0.1)
-//   .from($(".projects-container"), {
-//     opacity: 0,
-//     y: 50,
-//     ease: Circ.easeOut,
-//     duration: 1
-//   }, 0.3)
-
-
 //partners section
 const partners = gsap.timeline({
     scrollTrigger: {
