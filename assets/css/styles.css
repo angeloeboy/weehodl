@@ -382,22 +382,23 @@ html {
   z-index: 4;
 }
 
-.testing-2 #myVideo1 {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.testing-2 #myVideo2 {
-  display: none;
-}
-
 .testing-2 img {
   width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -38%);
-          transform: translate(-50%, -38%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .testing-2 img {
+    display: block;
+  }
+  .testing-2 video {
+    display: none;
+  }
 }
 
 /* This used to work for the parent element of button divs */
