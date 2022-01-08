@@ -641,7 +641,7 @@ html,
 @media (max-width: 500px) {
   .services-section .text h1 {
     font-size: 30px;
-    height: 50px;
+    height: 40px;
   }
 }
 
@@ -691,6 +691,7 @@ html,
     background-color: #131313;
     padding: 10px 0px;
     border-top: 1px solid rgba(201, 171, 2, 0.521);
+    border-bottom: 1px solid black;
   }
 }
 
