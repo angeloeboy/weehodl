@@ -561,7 +561,6 @@ html,
     margin-top: 0px !important;
     width: 80vw;
     margin: 0 auto;
-    border-bottom: 1px solid rgba(201, 171, 2, 0.521);
     padding-bottom: 50px;
   }
   .feature-section .text-container .img-container {
@@ -691,6 +690,7 @@ html,
   .services-section .text {
     background-color: #131313;
     padding: 10px 0px;
+    border-top: 1px solid rgba(201, 171, 2, 0.521);
   }
 }
 
