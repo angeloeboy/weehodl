@@ -61,6 +61,10 @@
         -webkit-text-stroke-color: gold;
       }
     }
+
+    @media (max-width: 500px) {
+      display: none;
+    }
   }
   .text-container {
     margin-top: 50px;
@@ -147,6 +151,7 @@
       .img-container {
         width: 100%;
         max-width: 500px;
+        display: none;
         video {
           width: 80%;
           margin: 0 auto;
@@ -158,5 +163,21 @@
 
   @media (max-width: 500px) {
     margin-top: 0px;
+  }
+}
+
+.top-feature {
+  margin-bottom: 0px !important;
+  margin-top: 100px;
+  display: none;
+  @media (max-width: 500px) {
+    display: block;
+    .text {
+      display: block;
+    }
+
+    .img-container {
+      display: none;
+    }
   }
 }

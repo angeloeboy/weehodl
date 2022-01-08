@@ -330,6 +330,10 @@ html,
   display: none;
 }
 
+.testing-2 .line {
+  display: none;
+}
+
 @media (max-width: 500px) {
   .testing-2 {
     position: static;
@@ -341,20 +345,22 @@ html,
     position: static;
     -webkit-transform: translate(0px, 0px), scale(1.2);
             transform: translate(0px, 0px), scale(1.2);
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    z-index: 1;
   }
   .testing-2 video {
     display: none;
   }
-}
-
-/* This used to work for the parent element of button divs */
-/* But it does not work with newer browsers, the below doesn't hide the play button parent div */
-/* This one works! */
-*::-webkit-media-controls-start-playback-button {
-  display: none !important;
-  -webkit-appearance: none;
+  .testing-2 .line {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 80vw;
+    height: 1px;
+    background-color: rgba(201, 171, 2, 0.521);
+    position: static;
+  }
 }
 
 .feature-section {
@@ -427,6 +433,12 @@ html,
   color: gold;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: gold;
+}
+
+@media (max-width: 500px) {
+  .feature-section .text {
+    display: none;
+  }
 }
 
 .feature-section .text-container {
@@ -544,6 +556,7 @@ html,
   .feature-section .text-container .img-container {
     width: 100%;
     max-width: 500px;
+    display: none;
   }
   .feature-section .text-container .img-container video {
     width: 80%;
@@ -555,6 +568,24 @@ html,
 @media (max-width: 500px) {
   .feature-section {
     margin-top: 0px;
+  }
+}
+
+.top-feature {
+  margin-bottom: 0px !important;
+  margin-top: 100px;
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .top-feature {
+    display: block;
+  }
+  .top-feature .text {
+    display: block;
+  }
+  .top-feature .img-container {
+    display: none;
   }
 }
 
