@@ -170,9 +170,10 @@
   }
 
   @media (max-width: 500px) {
-    position: static;
+    position: relative;
     height: initial;
     margin-top: 60px;
+
     img {
       display: block;
       position: static;
@@ -188,13 +189,18 @@
     .line {
       display: block;
       margin: 0 auto;
-      position: relative;
-
-      // margin-top: 50px;
+      position: absolute;
+      top: 10%;
       width: 80vw;
       height: 1px;
       background-color: rgba(201, 171, 2, 0.521);
-      position: static;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+    }
+
+    .line-two {
+      top: 95%;
     }
   }
 }

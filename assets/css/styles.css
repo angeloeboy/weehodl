@@ -336,7 +336,7 @@ html,
 
 @media (max-width: 500px) {
   .testing-2 {
-    position: static;
+    position: relative;
     height: initial;
     margin-top: 60px;
   }
@@ -355,11 +355,18 @@ html,
   .testing-2 .line {
     display: block;
     margin: 0 auto;
-    position: relative;
+    position: absolute;
+    top: 10%;
     width: 80vw;
     height: 1px;
     background-color: rgba(201, 171, 2, 0.521);
-    position: static;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: 2;
+  }
+  .testing-2 .line-two {
+    top: 95%;
   }
 }
 
@@ -576,7 +583,7 @@ html,
 }
 
 .top-feature {
-  margin-bottom: 0px !important;
+  margin-bottom: -40px !important;
   margin-top: 100px;
   display: none;
 }
