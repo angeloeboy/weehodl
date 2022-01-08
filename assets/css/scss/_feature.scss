@@ -148,6 +148,10 @@
 
     @media (max-width: 500px) {
       margin-top: 0px !important;
+      width: 80vw;
+      margin: 0 auto;
+      border-bottom: 1px solid rgba(201, 171, 2, 0.521);
+      padding-bottom: 50px;
       .img-container {
         width: 100%;
         max-width: 500px;

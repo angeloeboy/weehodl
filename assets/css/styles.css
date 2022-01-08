@@ -552,6 +552,10 @@ html,
 @media (max-width: 500px) {
   .feature-section .text-container {
     margin-top: 0px !important;
+    width: 80vw;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(201, 171, 2, 0.521);
+    padding-bottom: 50px;
   }
   .feature-section .text-container .img-container {
     width: 100%;
