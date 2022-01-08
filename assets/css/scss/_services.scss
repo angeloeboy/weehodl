@@ -95,6 +95,7 @@
       .service-title-container {
         display: flex;
         align-items: center;
+        background-color: #f7c801;
 
         .service-title {
           font-weight: 900;
@@ -109,6 +110,7 @@
         img {
           width: 50px;
           max-height: 60px;
+          margin-left: 20px;
         }
 
         .services-icon-gif {
@@ -138,7 +140,7 @@
         margin: 34px 2%;
         justify-content: center;
         .service-title-container {
-          flex-direction: column;
+          // flex-direction: column;
 
           .service-title {
             width: 100%;
