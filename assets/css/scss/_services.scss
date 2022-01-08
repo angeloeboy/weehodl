@@ -69,6 +69,11 @@
         }
       }
     }
+
+    @media (max-width: 500px) {
+      background-color: #131313;
+      padding: 10px 0px;
+    }
   }
 
   .services-container {

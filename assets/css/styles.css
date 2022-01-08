@@ -579,6 +579,7 @@ html,
 @media (max-width: 500px) {
   .feature-section {
     margin-top: 0px;
+    margin-bottom: 50px;
   }
 }
 
@@ -684,6 +685,13 @@ html,
   display: inline-block;
   opacity: 1;
   line-height: 100%;
+}
+
+@media (max-width: 500px) {
+  .services-section .text {
+    background-color: #131313;
+    padding: 10px 0px;
+  }
 }
 
 .services-section .services-container {
