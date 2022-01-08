@@ -102,6 +102,21 @@
           width: 50px;
           max-height: 60px;
         }
+
+        .services-icon-gif {
+          display: none;
+          max-height: 60px;
+        }
+      }
+
+      &:hover {
+        .services-icon-static {
+          display: none;
+        }
+
+        .services-icon-gif {
+          display: block;
+        }
       }
 
       .service-info {

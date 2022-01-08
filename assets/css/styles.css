@@ -687,6 +687,19 @@ html,
   max-height: 60px;
 }
 
+.services-section .services-container .service-item .service-title-container .services-icon-gif {
+  display: none;
+  max-height: 60px;
+}
+
+.services-section .services-container .service-item:hover .services-icon-static {
+  display: none;
+}
+
+.services-section .services-container .service-item:hover .services-icon-gif {
+  display: block;
+}
+
 .services-section .services-container .service-item .service-info {
   margin-top: 7px;
   line-height: 34px;

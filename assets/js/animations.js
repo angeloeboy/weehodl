@@ -188,7 +188,9 @@ serviceItem.forEach((item, i) => {
   })
 
   $(item).mouseover(() => {
-    $(item).children(".service-title-container").children(".icon").children("video")[0].play()
+    // $(item).children(".service-title-container").children(".icon").children("video")[0].play()
+    // $(item).children(".service-title-container").children("img").attr("src","assets/image/icons/static/MEGAPHONE.gif");
+
   })
   
 
@@ -426,16 +428,6 @@ if ( video.readyState === 4 ) {
 
 }
 
-var servicesIcon = document.getElementById("services-icon");
-
-if ( servicesIcon.readyState === 4 ) {
-  console.log("loaded")
-  $(".services-icon-static").css("display", "none")
-
-}else{
-  $("#services-icon").css("display", "none")
-
-}
 
 
 $("#wolf-animation")[0].pause();
