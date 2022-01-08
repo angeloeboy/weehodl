@@ -37,14 +37,19 @@
       }
 
       @media (max-width: 500px) {
-        font-size: 35px;
-        height: 40px;
+        font-size: 20px;
+        height: 30px;
+        font-weight: 500;
+        .hidden-text {
+          width: 100%;
+          text-align: center;
+        }
       }
 
-      @media (max-width: 400px) {
-        font-size: 25px;
-        height: 30px;
-      }
+      // @media (max-width: 400px) {
+      //   font-size: 25px;
+      //   height: 30px;
+      // }
     }
 
     .hidden-text {
@@ -138,7 +143,20 @@
     }
 
     @media (max-width: 500px) {
-      margin-top: 0px;
+      margin-top: 0px !important;
+      .img-container {
+        width: 100%;
+        max-width: 500px;
+        video {
+          width: 80%;
+          margin: 0 auto;
+          display: block;
+        }
+      }
     }
+  }
+
+  @media (max-width: 500px) {
+    margin-top: 0px;
   }
 }

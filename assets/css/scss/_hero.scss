@@ -103,80 +103,6 @@
       }
     }
 
-    .coins {
-      left: 5% !important;
-      top: 50% !important;
-      width: 200px;
-    }
-
-    .coins-2 {
-      right: 20% !important;
-      top: 50% !important;
-    }
-    .coins-3 {
-      right: 40%;
-      top: 75%;
-    }
-
-    .coins-4 {
-      left: 30%;
-      top: 70%;
-      z-index: -1;
-    }
-
-    .coins-5 {
-      left: 50%;
-      top: 60%;
-      z-index: -1;
-    }
-
-    @media (max-width: 550px) {
-      .coins {
-        top: 35% !important;
-        left: 0% !important;
-      }
-
-      .coins-2 {
-        right: 20% !important;
-        top: 35% !important;
-      }
-
-      .coins-3 {
-        right: 40%;
-        top: 60%;
-      }
-
-      .coins-4 {
-        top: 60%;
-        left: 20%;
-      }
-
-      .coins-5 {
-        top: 40%;
-        left: 40%;
-      }
-    }
-
-    .coin {
-      position: absolute !important;
-
-      .alternative {
-        opacity: 0;
-      }
-
-      &:hover {
-        .alternative {
-          // transition: opacity 0.1 ease;
-          opacity: 1;
-        }
-
-        .original {
-          transition: opacity 0.5s ease;
-          opacity: 0;
-        }
-      }
-    }
-
     img {
       position: absolute !important;
       width: 15vw !important;
@@ -211,10 +137,6 @@
   overflow: hidden;
   height: 100vh;
 
-  @media (max-width: 500px) {
-    height: 70vh !important;
-  }
-
   video {
     position: absolute;
     top: 50%;
@@ -244,8 +166,14 @@
   }
 
   @media (max-width: 500px) {
+    position: static;
+    height: initial;
+    margin-top: 100px;
     img {
       display: block;
+      position: static;
+      transform: translate(0px, 0px), scale(1.2);
+      transform: scale(1.2);
     }
 
     video {
