@@ -792,8 +792,8 @@ html,
 }
 
 @media (max-width: 500px) {
-  .services-section .services-container .service-item:nth-child(1) {
-    margin-top: 0px;
+  .services-section .services-container .service-item {
+    margin: 0px;
   }
 }
 
