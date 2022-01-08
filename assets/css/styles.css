@@ -793,7 +793,8 @@ html,
 
 @media (max-width: 500px) {
   .services-section .services-container .service-item {
-    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 0px;
   }
 }
 
