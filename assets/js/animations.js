@@ -72,7 +72,7 @@ $(".partners-link").click(() => {
 
 $(".portfolio-link").click(() => {
   menuClickedFunction();
-  bodyScrollBar.scrollTo(0,portfolio.offsetTop - 200, 1000 )
+  bodyScrollBar.scrollTo(0,portfolio.offsetTop, 1000 )
 })
 
 $(".contact-link").click(() => {
@@ -95,25 +95,25 @@ $(".menu-icon").click(() => {
 })
 
 
-gsap.to("body", {
-  backgroundColor: '#F5F5F5',
-  duration: 0.5,
-  scrollTrigger: {
-      trigger: ".partners-section",
-      toggleActions: "play none none reverse",
-      scroller: document.body, 
-  },
-})
+// gsap.to("body", {
+//   backgroundColor: '#F5F5F5',
+//   duration: 0.5,
+//   scrollTrigger: {
+//       trigger: ".partners-section",
+//       toggleActions: "play none none reverse",
+//       scroller: document.body, 
+//   },
+// })
 
-gsap.to(".services-section", {
-  css: { 'filter': 'invert(100%)' },
-  duration: 0.5,
-  scrollTrigger: {
-      trigger: ".partners-section",
-      toggleActions: "play none none reverse",
-      scroller: document.body, 
-  },
-})
+// gsap.to(".services-section", {
+//   css: { 'filter': 'invert(100%)' },
+//   duration: 0.5,
+//   scrollTrigger: {
+//       trigger: ".partners-section",
+//       toggleActions: "play none none reverse",
+//       scroller: document.body, 
+//   },
+// })
 
 
 
@@ -182,17 +182,11 @@ serviceItem.forEach((item, i) => {
       trigger: ".services-container",
       toggleActions: "play pause none reverse",
       scroller: document.body, 
-      start: "top 70%",
+      // start: "top 70%",
 
     }
   })
 
-  $(item).mouseover(() => {
-    // $(item).children(".service-title-container").children(".icon").children("video")[0].play()
-    // $(item).children(".service-title-container").children("img").attr("src","assets/image/icons/static/MEGAPHONE.gif");
-
-  })
-  
 
 });
 
@@ -218,9 +212,10 @@ projectsSectionSpan.forEach( (span, i) => {
       scrollTrigger: {
           trigger: span,
           scroller: document.body, 
-          start: "top bottom",
       },
     })
+
+    
 })
 
 
@@ -242,85 +237,107 @@ const project = gsap.utils.toArray('.project-item');
 project.forEach((project) => {
   let clicked = false;
 
-  $(project).children(".project-infos").children(".more").click(() => {
 
-    if(clicked){
-      let leave = gsap.timeline();
-      leave
-      .to($(".description"), {
-        css: {"max-height": "0px", "padding-bottom": "0px"},
-      })
-      .to($(project).children(".project-infos"), {
-        css: {"width": "100%", "z-index": "initial"},
-        duration: 0.1
-      })
-      .to($(project), {
-        css: {"z-index": "initial"},
-      })
-      .to($(project).children(".project-infos"), {
-        opacity: 0,
-        duration: 0.5
-      }, 0.1)
-      clicked = false
-    }else{
-      let tl = gsap.timeline();
-      tl
-      .to($(project), {
-        css: {"z-index": "70"},
-        duration: 0.1
-      }, 0.1)
-      .to($(project).children(".project-infos").children(".description"), {
-        css: {"max-height": "500px", "padding-bottom": "50px"},
-        duration: 0.4
-      },0.2)
+  if($(window).width() > 500){
+    $(project).children(".project-infos").children(".more").click(() => {
 
-      clicked = true
-    console.log("clicked")
-    }
-
-   
-  })
-
-
-  $(project).mouseenter(() => {
-    gsap.to($(project).children(".project-infos"), {
-      opacity: 1,
-      duration: 0.3
+      if(clicked){
+        let leave = gsap.timeline();
+        leave
+        .to($(".description"), {
+          css: {"max-height": "0px", "padding-bottom": "0px"},
+        })
+        .to($(project).children(".project-infos"), {
+          css: {"width": "100%", "z-index": "initial"},
+          duration: 0.1
+        })
+        .to($(project), {
+          css: {"z-index": "initial"},
+        })
+        .to($(project).children(".project-infos"), {
+          opacity: 0,
+          duration: 0.5
+        }, 0.1)
+        clicked = false
+      }else{
+        let tl = gsap.timeline();
+        tl
+        .to($(project), {
+          css: {"z-index": "70"},
+          duration: 0.1
+        }, 0.1)
+        .to($(project).children(".project-infos").children(".description"), {
+          css: {"max-height": "500px", "padding-bottom": "50px"},
+          duration: 0.4
+        },0.2)
+  
+        clicked = true
+      console.log("clicked")
+      }
+  
+     
     })
-  })
-
-
-  $(project).mouseleave(() => {
-
-    if(clicked){
-      let leave = gsap.timeline();
-      leave
-      .to($(".description"), {
-        css: {"max-height": "0px", "padding-bottom": "0px"},
+  
+  
+    $(project).mouseenter(() => {
+      gsap.to($(project).children(".project-infos"), {
+        opacity: 1,
+        duration: 0.3
       })
-      .to($(project).children(".project-infos"), {
-        css: {"width": "100%", "z-index": "initial"},
-        duration: 0.1
-      })
-      .to($(project), {
-        css: {"z-index": "initial"},
-      })
-      .to($(project).children(".project-infos"), {
-        opacity: 0,
-        duration: 0.5
-      }, 0.1)
-    }else{
-      let leave = gsap.timeline();
-      leave
-      .to($(project).children(".project-infos"), {
-        opacity: 0,
-        duration: 0.5
-      }, 0.1)
-    }
+    })
+  
+  
+    $(project).mouseleave(() => {
+  
+      if(clicked){
+        let leave = gsap.timeline();
+        leave
+        .to($(".description"), {
+          css: {"max-height": "0px", "padding-bottom": "0px"},
+        })
+        .to($(project).children(".project-infos"), {
+          css: {"width": "100%", "z-index": "initial"},
+          duration: 0.1
+        })
+        .to($(project), {
+          css: {"z-index": "initial"},
+        })
+        .to($(project).children(".project-infos"), {
+          opacity: 0,
+          duration: 0.5
+        }, 0.1)
+      }else{
+        let leave = gsap.timeline();
+        leave
+        .to($(project).children(".project-infos"), {
+          opacity: 0,
+          duration: 0.5
+        }, 0.1)
+      }
+  
+      clicked = false
+  
+    })
+  }else{
+    $(project).click(() => {
+      let id = $(project).attr("data-id");
+      $(".projects-infos-container .project").css("display", "none");
 
-    clicked = false
+      $('.projects-infos-container div[data-id=' + id + ']').fadeIn();
+      $(".projects-infos-container").fadeIn();
 
-  })
+
+    })
+
+
+    $(".projects-infos-container .close").click(() => {
+      $(".projects-infos-container").fadeOut();
+      $(".projects-infos-container .project").fadeOut();
+
+    });
+
+  }
+
   
 })
 
@@ -386,7 +403,7 @@ function hideVideo(e) {
 //carousel 
 $('.multiple-items').slick({
   infinite: true,
-  slidesToShow: 3,
+  slidesToShow: 2,
   slidesToScroll: 1,
   adaptiveHeight: true,
   arrows: false,

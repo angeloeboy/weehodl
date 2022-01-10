@@ -21,14 +21,13 @@ ScrollTrigger.scrollerProxy(document.body, {
 bodyScrollBar.addListener(ScrollTrigger.update);
 
 const fixedElem = document.querySelector('nav')
-const scrollToTop = $(".scroll-to-top")
+// const scrollToTop = $(".scroll-to-top")
 
+const infos = document.querySelector(".infos")
 
 bodyScrollBar.addListener(status => {
   const { offset } = status
-  fixedElem.style.top = `${offset.y}px`
-  // scrollToTop.style.top = `${offset.y}px`
-
+  fixedElem.style.top = `${offset.y}px`;
 })
 
 
