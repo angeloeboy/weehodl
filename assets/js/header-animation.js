@@ -201,3 +201,16 @@ gsap.to($("nav"), {
     scrub: true
 }
 })
+
+$(document).ready(() => {
+  console.log("reerer")
+
+ 
++
+    $(".testing-2 img").attr("src","assets/image/Weehodl_Wolf_final(1).gif")
+
+
+  setTimeout(() => {
+    $(".testing-2 img").attr("src","assets/image/lastFrame.png")  
+  }, 10000);
+})
