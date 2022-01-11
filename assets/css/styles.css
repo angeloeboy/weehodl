@@ -71,9 +71,9 @@ nav .container .menu-icon {
 
 @media (max-width: 800px) {
   nav .container {
-    -webkit-box-align: initial;
-        -ms-flex-align: initial;
-            align-items: initial;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   nav .container .menus {
     position: absolute;
@@ -101,11 +101,6 @@ nav .container .menu-icon {
   }
   nav .container .menus li {
     margin: 1rem 0px;
-    background: #131313;
-    -webkit-box-shadow: 0px 0px 10px 4px #00000046;
-            box-shadow: 0px 0px 10px 4px #00000046;
-    padding: 10px;
-    width: 90%;
   }
   nav .container .menu-icon {
     display: -webkit-box;
@@ -120,6 +115,11 @@ nav .container .menu-icon {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    background: #131313;
+    -webkit-box-shadow: 0px 0px 10px 4px #00000046;
+            box-shadow: 0px 0px 10px 4px #00000046;
+    padding: 10px;
+    margin-top: 10px;
     cursor: pointer;
   }
   nav .container .menu-icon div {
@@ -1211,6 +1211,12 @@ html,
   padding: 20px 20px;
   background-color: white;
   overflow-y: scroll;
+}
+
+@media (max-width: 500px) {
+  .projects-infos-container {
+    display: none;
+  }
 }
 
 .projects-infos-container .project-image {

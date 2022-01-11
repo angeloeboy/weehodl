@@ -230,6 +230,9 @@
 }
 
 .projects-infos-container {
+  @media (max-width: 500px) {
+    display: none;
+  }
   position: fixed;
   background-color: pink;
   top: 100px;
