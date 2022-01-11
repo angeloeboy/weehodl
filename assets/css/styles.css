@@ -821,8 +821,8 @@ html,
 
 @media (max-width: 500px) {
   .services-section {
-    -webkit-transform: translateY(-40px);
-            transform: translateY(-40px);
+    -webkit-transform: translateY(-90px);
+            transform: translateY(-90px);
   }
 }
 

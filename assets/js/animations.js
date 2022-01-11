@@ -60,7 +60,7 @@ let menuClickedFunction = () => {
 } 
 
 $(".services-link").click(() => {
-  bodyScrollBar.scrollTo(0,serviceslink.offsetTop - 130, 1000 )
+  bodyScrollBar.scrollTo(0,serviceslink.offsetTop - 200, 1000 )
   menuClickedFunction();
 })
 
