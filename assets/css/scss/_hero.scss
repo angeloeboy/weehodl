@@ -177,9 +177,10 @@
     img {
       display: block;
       position: static;
-      transform: translate(0px, 0px), scale(1.2);
       transform: scale(1);
       z-index: 1;
+      // border-bottom: 1px solid rgba(201, 171, 2, 0.521);
+      padding-bottom: 40px;
     }
 
     video {
@@ -201,7 +202,7 @@
     }
 
     .line-two {
-      top: 95%;
+      top: 99%;
     }
   }
 }

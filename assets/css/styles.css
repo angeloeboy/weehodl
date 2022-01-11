@@ -348,11 +348,10 @@ html,
   .testing-2 img {
     display: block;
     position: static;
-    -webkit-transform: translate(0px, 0px), scale(1.2);
-            transform: translate(0px, 0px), scale(1.2);
     -webkit-transform: scale(1);
             transform: scale(1);
     z-index: 1;
+    padding-bottom: 40px;
   }
   .testing-2 video {
     display: none;
@@ -373,7 +372,7 @@ html,
             box-shadow: 0px 0px 10px 4px #00000046;
   }
   .testing-2 .line-two {
-    top: 95%;
+    top: 99%;
   }
 }
 
@@ -590,8 +589,7 @@ html,
 }
 
 .top-feature {
-  margin-bottom: -10px !important;
-  margin-top: 40px;
+  margin-top: -70px;
   display: none;
 }
 
