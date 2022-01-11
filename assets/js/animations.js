@@ -179,9 +179,9 @@ serviceItem.forEach((item, i) => {
     opacity: 0,
     scrollTrigger: {
       trigger: item,
-      toggleActions: "play pause none reverse",
+      toggleActions: "play pause none none",
       scroller: document.body, 
-      start: "top 70%",
+      start: "top bottom",
 
     }
   })
