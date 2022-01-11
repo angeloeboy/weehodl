@@ -870,6 +870,42 @@ html,
   background-color: white;
 }
 
+.services-section .arrows {
+  color: white;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 95%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  left: 0px;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0.5;
+}
+
+.services-section .arrows div {
+  width: 20px;
+}
+
+.services-section .arrows div img {
+  width: 100%;
+}
+
+.services-section .arrows .prev img {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.services-section .arrows .next img {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
 @media (max-width: 500px) {
   .services-section {
     -webkit-transform: translateY(-90px);

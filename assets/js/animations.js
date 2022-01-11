@@ -435,9 +435,11 @@ if($(window).width() <= 500){
     dots: true,
     infinite: false,
     speed: 300,
+    appendArrows: $(".arrows"),
+    prevArrow: $(".prev"),
+    nextArrow: $(".next"),
     slidesToShow: 1,
-    arrows: false,
-    dotsClass: 'dots'
+      dotsClass: 'dots'
   });
   console.log("dfdfdf")
   $(".dots button").text("")
