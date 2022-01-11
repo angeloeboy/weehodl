@@ -76,6 +76,7 @@ nav .container .menu-icon {
             align-items: initial;
     background: #131313;
     padding: 0px 5%;
+    border-top: 1px solid rgba(201, 171, 2, 0.521);
   }
   nav .container .menus {
     position: absolute;
