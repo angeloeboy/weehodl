@@ -343,7 +343,7 @@ html,
   .testing-2 {
     position: relative;
     height: initial;
-    margin-top: 60px;
+    margin-top: 20px;
   }
   .testing-2 img {
     display: block;
@@ -564,7 +564,7 @@ html,
 
 @media (max-width: 500px) {
   .feature-section .text-container {
-    margin-top: 0px !important;
+    margin-top: -15px !important;
     width: 80vw;
     margin: 0 auto;
     padding-bottom: 50px;
