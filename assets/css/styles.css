@@ -75,6 +75,7 @@ nav .container .menu-icon {
         -ms-flex-align: initial;
             align-items: initial;
     background: #131313;
+    padding: 0px 5%;
   }
   nav .container .menus {
     position: absolute;
