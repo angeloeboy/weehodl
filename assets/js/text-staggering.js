@@ -27,7 +27,7 @@ featuresInfo.forEach((item, i) => {
 
   
   about.from(item, 2, {
-    x: -50,
+    x: "-5%",
     opacity: 0,
     delay: i * 0.5,
     ease: Circ.easeOut,

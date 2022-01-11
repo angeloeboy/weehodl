@@ -585,10 +585,12 @@ html,
             box-shadow: 0px 0px 10px 4px #00000046;
     padding: 10px 5%;
     margin-top: 10px;
+    word-wrap: break-all;
   }
   .feature-section .text-container .features-info-text {
     margin-top: 10px;
     margin-bottom: 20px;
+    font-size: 15px;
   }
 }
 
