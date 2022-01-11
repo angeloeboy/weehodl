@@ -174,15 +174,14 @@ const serviceItem = gsap.utils.toArray('.service-item');
 serviceItem.forEach((item, i) => {
 
   gsap.from(item, { 
-    duration: 0.7,
+    duration: 0.5,
     y: 10,
     opacity: 0,
     scrollTrigger: {
       trigger: item,
       toggleActions: "play pause none none",
       scroller: document.body, 
-      start: "top bottom",
-
+      start: "top 100%",
     }
   })
 
