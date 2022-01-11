@@ -767,6 +767,14 @@ html,
   max-height: 60px;
 }
 
+@media (max-width: 500px) {
+  .services-section .services-container .service-item .service-title-container {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 .services-section .services-container .service-item:hover .services-icon-static {
   display: none;
 }
