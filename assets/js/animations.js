@@ -177,12 +177,11 @@ serviceItem.forEach((item, i) => {
     duration: 0.7,
     y: 10,
     opacity: 0,
-    delay: i * 0.2,
     scrollTrigger: {
-      trigger: ".services-container",
+      trigger: item,
       toggleActions: "play pause none reverse",
       scroller: document.body, 
-      // start: "top 70%",
+      start: "top 70%",
 
     }
   })
