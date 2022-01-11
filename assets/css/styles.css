@@ -564,7 +564,7 @@ html,
 
 @media (max-width: 500px) {
   .feature-section .text-container {
-    margin-top: -15px !important;
+    margin-top: -50px !important;
     width: 80vw;
     margin: 0 auto;
     padding-bottom: 50px;
