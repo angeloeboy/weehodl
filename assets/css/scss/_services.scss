@@ -118,7 +118,8 @@
         }
 
         @media (max-width: 500px) {
-          align-items: flex-start;
+          align-items: stretch;
+          border: 1px solid #f7c801;
         }
       }
 
@@ -175,7 +176,6 @@
           .service-title {
             margin: 0px;
             // margin-left: 1rem;
-            transform: translateX(15px);
           }
           video,
           img {

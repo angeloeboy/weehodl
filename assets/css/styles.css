@@ -769,9 +769,10 @@ html,
 
 @media (max-width: 500px) {
   .services-section .services-container .service-item .service-title-container {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    border: 1px solid #f7c801;
   }
 }
 
@@ -828,8 +829,6 @@ html,
   }
   .services-section .services-container .service-item .service-title-container .service-title {
     margin: 0px;
-    -webkit-transform: translateX(15px);
-            transform: translateX(15px);
   }
   .services-section .services-container .service-item .service-title-container video,
   .services-section .services-container .service-item .service-title-container img {
