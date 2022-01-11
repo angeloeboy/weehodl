@@ -430,18 +430,35 @@ $('.multiple-items').slick({
   ]
 });
 
-
-
-
-var video = document.getElementById("video");
-
-if ( video.readyState === 4 ) {
-  $(".globe-gif").css("display", "none")
-
-}else{
-  $(".globe-vid").css("display", "none")
+if($(window).width() <= 500){
+  $('.services-section .services-container').slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 1,
+    arrows: false,
+    dotsClass: 'dots'
+  });
+  console.log("dfdfdf")
+  $(".dots button").text("")
 
 }
+
+
+
+
+
+
+
+// var video = document.getElementById("video");
+
+// if ( video.readyState === 4 ) {
+//   $(".globe-gif").css("display", "none")
+
+// }else{
+//   $(".globe-vid").css("display", "none")
+
+// }
 
 
 

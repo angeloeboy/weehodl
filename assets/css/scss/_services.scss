@@ -187,6 +187,29 @@
     }
   }
 
+  .dots {
+    display: flex;
+    justify-content: space-around !important;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    li {
+    }
+    button {
+      background-color: gray;
+      border: none;
+      width: 5px;
+      height: 5px;
+      border-radius: 100%;
+    }
+
+    .slick-active {
+      button {
+        background-color: white;
+      }
+    }
+  }
+
   @media (max-width: 500px) {
     transform: translateY(-90px);
   }

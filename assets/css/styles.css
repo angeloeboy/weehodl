@@ -546,10 +546,20 @@ html,
   width: 100%;
 }
 
+.feature-section .text-container .img-container img {
+  display: none;
+}
+
 @media (max-width: 1000px) {
   .feature-section .text-container .img-container {
     width: 100%;
     max-width: 500px;
+  }
+}
+
+@media (max-width: 500px) {
+  .feature-section .text-container .img-container video {
+    display: none;
   }
 }
 
@@ -835,6 +845,29 @@ html,
     width: 40px;
     height: 50px;
   }
+}
+
+.services-section .dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute !important;
+      justify-content: space-around !important;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.services-section .dots button {
+  background-color: gray;
+  border: none;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+}
+
+.services-section .dots .slick-active button {
+  background-color: white;
 }
 
 @media (max-width: 500px) {
