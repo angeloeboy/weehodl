@@ -169,24 +169,28 @@ $(".menu-icon").click(() => {
 
 
 //services
-const serviceItem = gsap.utils.toArray('.service-item');
 
-serviceItem.forEach((item, i) => {
+if($(window).width() > 500){
+  const serviceItem = gsap.utils.toArray('.service-item');
 
-  gsap.from(item, { 
-    duration: 0.5,
-    y: 10,
-    opacity: 0,
-    scrollTrigger: {
-      trigger: item,
-      toggleActions: "play pause none none",
-      scroller: document.body, 
-      start: "top 100%",
-    }
-  })
+  serviceItem.forEach((item, i) => {
+
+    gsap.from(item, { 
+      duration: 0.5,
+      y: 10,
+      opacity: 0,
+      scrollTrigger: {
+        trigger: item,
+        toggleActions: "play pause none none",
+        scroller: document.body, 
+        start: "top 100%",
+      }
+    })
 
 
-});
+  });
+}
+
 
 
 //projects
@@ -431,6 +435,23 @@ $('.multiple-items').slick({
 });
 
 if($(window).width() <= 500){
+
+
+
+  function testimonialsSlick() {
+    if (typeof $.fn.slick == 'function') {
+      window.clearInterval(slickInterval)
+      console.log("refresh the scrollTrigger")
+
+      setTimeout(() => {
+        ScrollTrigger.refresh()
+        
+      }, 300);  
+
+   }
+}
+var slickInterval = window.setInterval(testimonialsSlick, 300);
+
   $('.services-section .services-container').slick({
     dots: true,
     infinite: false,
@@ -438,29 +459,18 @@ if($(window).width() <= 500){
     appendArrows: $(".arrows"),
     prevArrow: $(".prev"),
     nextArrow: $(".next"),
+
     slidesToShow: 1,
       dotsClass: 'dots'
   });
-  console.log("dfdfdf")
   $(".dots button").text("")
 
+
+  
 }
 
 
 
-
-
-
-
-// var video = document.getElementById("video");
-
-// if ( video.readyState === 4 ) {
-//   $(".globe-gif").css("display", "none")
-
-// }else{
-//   $(".globe-vid").css("display", "none")
-
-// }
 
 
 

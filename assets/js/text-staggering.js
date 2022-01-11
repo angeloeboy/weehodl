@@ -1,3 +1,5 @@
+
+
 // about section
 const about = gsap.timeline({
     scrollTrigger: {
@@ -47,6 +49,7 @@ const services = gsap.timeline({
   }
 })
 
+
 services.from('.services-section .hidden-text', {
   y: "100%", 
   ease:Power4.easeOut,
@@ -56,7 +59,9 @@ services.from('.services-section .hidden-text', {
 })
 
 
-//partners section
+// partners section
+
+
 const partners = gsap.timeline({
     scrollTrigger: {
         trigger: ".partners-section .text",
@@ -65,6 +70,7 @@ const partners = gsap.timeline({
     }
   })
   
+
   partners.from('.partners-section .hidden-text', {
     y:"100%", 
     ease:Power4.easeOut,
@@ -83,6 +89,9 @@ const partners = gsap.timeline({
 
 
 
+
+
+
 //footer section
 const footer = gsap.timeline({
     scrollTrigger: {
@@ -92,3 +101,8 @@ const footer = gsap.timeline({
   })
   
   footer.staggerFrom('footer .hidden-text', 1, {y:"100%", ease:Power4.easeOut}, 0.1)
+
+
+
+
+  
