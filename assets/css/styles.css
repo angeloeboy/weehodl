@@ -832,14 +832,11 @@ html,
 
 @media (max-width: 500px) {
   .services-section .services-container .service-item {
-    margin-top: 0px;
+    margin-top: 5px;
     margin-bottom: 0px;
     padding-top: 0px;
     min-height: 400px;
     padding: 0px;
-  }
-  .services-section .services-container .service-item .service-title-container {
-    margin-left: 15px;
   }
   .services-section .services-container .service-item .service-title-container .service-title {
     margin: 0px;
