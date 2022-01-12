@@ -1323,6 +1323,12 @@ html,
   }
 }
 
+@media (max-width: 500px) {
+  .projects-section {
+    padding-top: 50px;
+  }
+}
+
 .projects-infos-container {
   position: fixed;
   background-color: pink;

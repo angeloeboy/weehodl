@@ -65,14 +65,14 @@ $(".services-link").click(() => {
 })
 
 $(".partners-link").click(() => {
-  bodyScrollBar.scrollTo(0,partnerslink.offsetTop, 1000 )
+  bodyScrollBar.scrollTo(0,partnerslink.offsetTop - 71, 1000 )
   menuClickedFunction();
 
 })
 
 $(".portfolio-link").click(() => {
   menuClickedFunction();
-  bodyScrollBar.scrollTo(0,portfolio.offsetTop, 1000 )
+  bodyScrollBar.scrollTo(0,portfolio.offsetTop - 71, 1000 )
 })
 
 $(".contact-link").click(() => {

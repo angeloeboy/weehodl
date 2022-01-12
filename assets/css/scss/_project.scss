@@ -227,6 +227,10 @@
       font-size: 14px;
     }
   }
+
+  @media (max-width: 500px) {
+    padding-top: 50px;
+  }
 }
 
 .projects-infos-container {
