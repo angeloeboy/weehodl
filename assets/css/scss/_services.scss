@@ -264,3 +264,38 @@
     transform: translateY(-90px);
   }
 }
+
+.stats {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  .stat-item {
+    background: #131313;
+    box-shadow: 0px 0px 10px 4px #00000046;
+    padding: 20px;
+    width: 23%;
+    margin: 1%;
+    text-align: center;
+    .stat-num {
+      font-size: 30px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .stat-title {
+      font-size: 16px;
+      color: #f7c801;
+      background: #1d1d1d;
+      padding: 10px;
+      display: block;
+      margin: 0 auto;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 719px) {
+      width: 48%;
+    }
+  }
+}

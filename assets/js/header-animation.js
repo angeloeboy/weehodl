@@ -207,10 +207,9 @@ $(document).ready(() => {
 
  
 +
-    $(".testing-2 img").attr("src","assets/image/Weehodl_Wolf_final(1).gif")
-
+    $(".testing-2 img").attr("src","assets/image/wolf.gif")
 
   setTimeout(() => {
     $(".testing-2 img").attr("src","assets/image/lastFrame.png")  
-  }, 10000);
+  }, 9000);
 })

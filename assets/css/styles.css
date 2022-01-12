@@ -343,7 +343,7 @@ html,
   .testing-2 {
     position: relative;
     height: initial;
-    margin-top: 20px;
+    margin-top: 80px;
   }
   .testing-2 img {
     display: block;
@@ -351,7 +351,6 @@ html,
     -webkit-transform: scale(1);
             transform: scale(1);
     z-index: 1;
-    padding-bottom: 40px;
   }
   .testing-2 video {
     display: none;
@@ -574,7 +573,6 @@ html,
 
 @media (max-width: 500px) {
   .feature-section .text-container {
-    margin-top: -50px !important;
     width: 80vw;
     margin: 0 auto;
     padding-bottom: 50px;
@@ -616,9 +614,6 @@ html,
 }
 
 @media (max-width: 500px) {
-  .top-feature {
-    display: block;
-  }
   .top-feature .text {
     display: block;
   }
@@ -933,6 +928,51 @@ html,
   }
 }
 
+.stats {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.stats .stat-item {
+  background: #131313;
+  -webkit-box-shadow: 0px 0px 10px 4px #00000046;
+          box-shadow: 0px 0px 10px 4px #00000046;
+  padding: 20px;
+  width: 23%;
+  margin: 1%;
+  text-align: center;
+}
+
+.stats .stat-item .stat-num {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+.stats .stat-item .stat-title {
+  font-size: 16px;
+  color: #f7c801;
+  background: #1d1d1d;
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+@media (max-width: 719px) {
+  .stats .stat-item {
+    width: 48%;
+  }
+}
+
 .partners-section {
   padding: 80px 0px;
   background-color: #eeeeee;
@@ -1122,7 +1162,7 @@ html,
 }
 
 .partners-section .dots .slick-active button {
-  background-color: white;
+  background-color: black;
 }
 
 .partners-section .arrows {
