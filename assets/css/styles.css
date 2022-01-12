@@ -371,7 +371,7 @@ html,
             box-shadow: 0px 0px 10px 4px #00000046;
   }
   .testing-2 .line-two {
-    top: 99%;
+    top: 90%;
   }
 }
 
@@ -575,7 +575,8 @@ html,
   .feature-section .text-container {
     width: 80vw;
     margin: 0 auto;
-    padding-bottom: 50px;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
   }
   .feature-section .text-container .img-container {
     width: 100%;
