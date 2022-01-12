@@ -57,6 +57,7 @@
     justify-content: center;
     flex-wrap: wrap;
     display: flex;
+
     .partner-item {
       height: 100%;
       margin-top: 40px;
@@ -87,13 +88,24 @@
         text-align: center;
         text-transform: uppercase;
         margin-top: 10px;
-        background-color: #f7c801;
         padding: 10px;
       }
 
       p {
         margin-top: 10px;
         line-height: 34px;
+      }
+
+      .mexc {
+        background-color: #76fcb2;
+      }
+
+      .poolz {
+        background-color: #3677ff;
+      }
+
+      .gate {
+        background-color: #de5959;
       }
 
       @media (max-width: 765px) {

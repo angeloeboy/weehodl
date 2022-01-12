@@ -1053,13 +1053,24 @@ html,
   text-align: center;
   text-transform: uppercase;
   margin-top: 10px;
-  background-color: #f7c801;
   padding: 10px;
 }
 
 .partners-section .partners-container .partner-item p {
   margin-top: 10px;
   line-height: 34px;
+}
+
+.partners-section .partners-container .partner-item .mexc {
+  background-color: #76fcb2;
+}
+
+.partners-section .partners-container .partner-item .poolz {
+  background-color: #3677ff;
+}
+
+.partners-section .partners-container .partner-item .gate {
+  background-color: #de5959;
 }
 
 @media (max-width: 765px) {
