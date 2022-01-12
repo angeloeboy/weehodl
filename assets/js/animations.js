@@ -403,36 +403,36 @@ function hideVideo(e) {
 
 
 //carousel 
-$('.multiple-items').slick({
-  infinite: true,
-  slidesToShow: 2,
-  slidesToScroll: 1,
-  adaptiveHeight: true,
-  arrows: false,
-  autoplay: true,
-  autoplaySpeed: 1000,
+// $('.multiple-items').slick({
+//   infinite: true,
+//   slidesToShow: 2,
+//   slidesToScroll: 1,
+//   adaptiveHeight: true,
+//   arrows: false,
+//   autoplay: true,
+//   autoplaySpeed: 1000,
 
-  responsive: [
-    {
-      breakpoint: 800,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 500,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
+//   responsive: [
+//     {
+//       breakpoint: 800,
+//       settings: {
+//         slidesToShow: 2,
+//         slidesToScroll: 1
+//       }
+//     },
+//     {
+//       breakpoint: 500,
+//       settings: {
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//         autoplay: true,
 
         
-      }
-    }
+//       }
+//     }
 
-  ]
-});
+//   ]
+// });
 
 if($(window).width() <= 500){
 

@@ -1,5 +1,5 @@
 .partners-section {
-  padding: 200px 0px;
+  padding: 80px 0px;
   background-color: #eeeeee;
 
   .text {
@@ -54,7 +54,8 @@
   .partners-container {
     display: flex !important;
     align-items: center;
-    margin-top: 82px;
+    justify-content: center;
+    flex-wrap: wrap;
     div {
       display: flex !important;
       align-items: center;
@@ -65,6 +66,9 @@
       justify-content: center;
       height: 100%;
       margin: auto;
+      min-width: 200px;
+      margin-top: 40px;
+
       .img-container {
         height: 100%;
       }
