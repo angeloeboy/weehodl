@@ -124,6 +124,10 @@
         margin: 1% 10px;
       }
     }
+
+    @media (max-width: 500px) {
+      margin-top: 57px;
+    }
   }
 
   .dots {
@@ -184,5 +188,9 @@
         transform: rotate(-90deg);
       }
     }
+  }
+
+  @media (max-width: 500px) {
+    padding-top: 50px;
   }
 }

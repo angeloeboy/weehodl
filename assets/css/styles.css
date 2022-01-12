@@ -1092,6 +1092,12 @@ html,
   }
 }
 
+@media (max-width: 500px) {
+  .partners-section .partners-container {
+    margin-top: 57px;
+  }
+}
+
 .partners-section .dots {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1162,6 +1168,12 @@ html,
 .partners-section .arrows .next img {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
+}
+
+@media (max-width: 500px) {
+  .partners-section {
+    padding-top: 50px;
+  }
 }
 
 .projects-section {
