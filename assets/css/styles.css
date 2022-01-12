@@ -562,6 +562,10 @@ html,
   }
 }
 
+.feature-section .text-container .about-us-text {
+  display: none;
+}
+
 @media (max-width: 1000px) {
   .feature-section .text-container {
     -webkit-box-orient: vertical;
@@ -599,6 +603,20 @@ html,
     margin-top: 10px;
     margin-bottom: 20px;
     font-size: 15px;
+  }
+  .feature-section .text-container .about-us-text {
+    display: block;
+    position: absolute;
+    top: 0px;
+    -webkit-transform: translateY(-60%);
+            transform: translateY(-60%);
+    width: 100px;
+    right: 0px;
+    text-align: center;
+    padding: 5px;
+    background-color: #c9ab02;
+    color: black;
+    font-size: 14px;
   }
 }
 
