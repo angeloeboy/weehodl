@@ -118,8 +118,8 @@
         }
 
         @media (max-width: 500px) {
-          align-items: stretch;
-          border: 1px solid #f7c801;
+          align-items: flex-start;
+          // border: 1px solid #f7c801;
         }
       }
 

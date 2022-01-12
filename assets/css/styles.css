@@ -779,10 +779,9 @@ html,
 
 @media (max-width: 500px) {
   .services-section .services-container .service-item .service-title-container {
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
-    border: 1px solid #f7c801;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
