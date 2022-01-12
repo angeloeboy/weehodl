@@ -455,34 +455,19 @@ if($(window).width() <= 500){
 var slickInterval = window.setInterval(testimonialsSlick, 300);
 
  $('.multiple-items').slick({
-  infinite: true,
-  slidesToShow: 2,
+  slidesToShow: 1,
   slidesToScroll: 1,
   adaptiveHeight: true,
-  arrows: false,
+  arrows: true,
+  appendArrows: $(".partners-section .arrows"),
+  prevArrow: $(".partners-section .prev"),
+  nextArrow: $(".partners-section .next"),
+  dotsClass: 'dots',
+  dots: true,
 
-  responsive: [
-    {
-      breakpoint: 800,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 500,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-
-        
-      }
-    }
-
-  ]
 });
 
+$(".dots button").text("")
 
   
 }
@@ -510,9 +495,9 @@ var slickInterval = window.setInterval(testimonialsSlick, 300);
     dots: true,
     infinite: false,
     speed: 300,
-    appendArrows: $(".arrows"),
-    prevArrow: $(".prev"),
-    nextArrow: $(".next"),
+    appendArrows: $(".services-section .arrows"),
+    prevArrow: $(".services-section .prev"),
+    nextArrow: $(".services-section .next"),
 
     slidesToShow: 1,
       dotsClass: 'dots'
