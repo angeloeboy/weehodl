@@ -104,12 +104,12 @@
       }
 
       .project-infos {
-        box-shadow: 0px 0px 18px rgba(71, 71, 71, 0.25);
         border-radius: 6px;
         padding: 0px 20px;
         overflow-y: hidden;
         position: absolute;
         top: -25%;
+        box-shadow: 0px 0px 18px rgba(71, 71, 71, 0.25);
         background-color: rgb(255, 255, 255);
         width: 110%;
         padding-top: calc(100px + 30%);
