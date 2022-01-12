@@ -1032,8 +1032,6 @@ html,
 }
 
 .partners-section .partners-container .partner-item img {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
   height: 80px;
   max-width: 100%;
   display: block;
