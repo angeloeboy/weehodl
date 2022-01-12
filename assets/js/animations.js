@@ -168,6 +168,7 @@ $(".menu-icon").click(() => {
 
 
 
+
 //services
 
 if($(window).width() > 500){
@@ -433,6 +434,59 @@ function hideVideo(e) {
 
 //   ]
 // });
+
+
+if($(window).width() <= 500){
+
+
+
+  function testimonialsSlick() {
+    if (typeof $.fn.slick == 'function') {
+      window.clearInterval(slickInterval)
+      console.log("refresh the scrollTrigger")
+
+      setTimeout(() => {
+        ScrollTrigger.refresh()
+        
+      }, 300);  
+
+   }
+}
+var slickInterval = window.setInterval(testimonialsSlick, 300);
+
+ $('.multiple-items').slick({
+  infinite: true,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  adaptiveHeight: true,
+  arrows: false,
+
+  responsive: [
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+
+        
+      }
+    }
+
+  ]
+});
+
+
+  
+}
+
 
 if($(window).width() <= 500){
 
