@@ -40,7 +40,7 @@ gsap.to(fundedValue,2,{
   scrollTrigger: {
     trigger: $(".stats"),
     scroller: document.body, 
-    start: "top 100%",
+    start: "top 95%",
   }
 });
 
@@ -55,7 +55,7 @@ gsap.to(investorNum,2,{
   scrollTrigger: {
     trigger: $(".stats"),
     scroller: document.body, 
-    start: "top 100%",
+    start: "top 95%",
   }
 });
 
@@ -71,11 +71,11 @@ gsap.to(kolsValue,1,{
   scrollTrigger: {
     trigger: $("#investor"),
     scroller: document.body, 
-    start: "top 100%",
+    start: "top 95%",
   }
 });
 
-var shillersValue={val:0} , shillers = 358;
+var shillersValue={val:0} , shillers = 387;
 
 gsap.to(shillersValue,1,{
   val:shillers,
@@ -86,7 +86,7 @@ gsap.to(shillersValue,1,{
   scrollTrigger: {
     trigger: $("#investor"),
     scroller: document.body, 
-    start: "top 100%",
+    start: "top 95%",
   }
 });
 

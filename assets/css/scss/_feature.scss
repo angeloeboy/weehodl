@@ -157,9 +157,7 @@
     @media (max-width: 500px) {
       width: 80vw;
       margin: 0 auto;
-      // border-bottom: 1px solid rgba(201, 171, 2, 0.521);
-      // padding-bottom: 50px;
-      transform: translateY(-30px);
+
       .img-container {
         width: 100%;
         max-width: 500px;
@@ -221,5 +219,30 @@
     .img-container {
       display: none;
     }
+  }
+}
+
+.community-section {
+  color: white;
+  text-align: center;
+  margin: 10px 10%;
+  background-color: #131313;
+  padding: 5%;
+  border-top: 1px solid rgba(201, 171, 2, 0.521);
+
+  h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  p {
+    margin-top: 20px;
+  }
+  button {
+    padding: 15px 20px;
+    background-color: transparent;
+    border: 0.7px solid gold;
+    color: white;
+    margin: 20px;
+    background-color: black;
   }
 }
