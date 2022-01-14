@@ -30,7 +30,16 @@ body {
 }
 
 .scrollbar-track {
-  display: none !important;
+  background-color: transparent !important;
+}
+
+.scrollbar-track .scrollbar-thumb {
+  background-color: white !important;
+  opacity: 0.7 !important;
+}
+
+.scrollbar-track-y {
+  width: 1px !important;
 }
 
 nav {
