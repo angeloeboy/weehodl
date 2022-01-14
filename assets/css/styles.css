@@ -578,8 +578,8 @@ html,
   .feature-section .text-container {
     width: 80vw;
     margin: 0 auto;
-    -webkit-transform: translateY(-40px);
-            transform: translateY(-40px);
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
   }
   .feature-section .text-container .img-container {
     width: 100%;
@@ -593,32 +593,30 @@ html,
   }
   .feature-section .text-container .features-info {
     background: #131313;
-    -webkit-box-shadow: 0px 0px 10px 4px #00000046;
-            box-shadow: 0px 0px 10px 4px #00000046;
     padding: 10px 5%;
-    margin-top: 10px;
   }
   .feature-section .text-container .features-info-text {
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 20px;
     font-size: 15px;
   }
   .feature-section .text-container .about-us-text {
     display: block;
-    position: absolute;
-    top: 8px;
-    -webkit-transform: translateY(-65%);
-            transform: translateY(-65%);
-    width: 130px;
-    right: 0px;
-    text-align: center;
-    padding: 5px 0px;
-    background: #131313;
-    color: white;
-    font-size: 14px;
-    z-index: -1;
-    border-left: 2px solid rgba(201, 171, 2, 0.521);
+    padding: 15px;
     border-top: 2px solid rgba(201, 171, 2, 0.521);
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #131313;
+    width: 100%;
+    text-align: center;
+  }
+  .feature-section .text-container .about-us-text span {
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: gold;
   }
 }
 
