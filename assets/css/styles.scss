@@ -31,6 +31,10 @@ body {
 .scroller {
   height: 100vh;
 }
+
+.scrollbar-track {
+  display: none !important;
+}
 @import "scss/nav";
 
 @import "scss/helper";

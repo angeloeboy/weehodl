@@ -223,37 +223,40 @@
 }
 
 .community-section {
-  color: white;
-  text-align: center;
-  margin: 10px 10%;
-  background-color: #131313;
-  padding: 5%;
-  border-top: 1px solid rgba(201, 171, 2, 0.521);
-  border-top-left-radius: 3px 3px;
-  border-top-right-radius: 3px 3px;
+  background-color: black;
+  .inner {
+    color: white;
+    text-align: center;
+    margin: 10px 10%;
+    background-color: #131313;
+    padding: 5%;
+    border-top: 1px solid rgba(201, 171, 2, 0.521);
+    border-top-left-radius: 3px 3px;
+    border-top-right-radius: 3px 3px;
 
-  h1 {
-    font-size: 24px;
-    text-transform: uppercase;
-    font-weight: 900;
-    span {
-      color: transparent;
-      -webkit-text-stroke-width: 1px;
-      -webkit-text-stroke-color: gold;
+    h1 {
+      font-size: 24px;
+      text-transform: uppercase;
+      font-weight: 900;
+      span {
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: gold;
+      }
     }
-  }
-  p {
-    margin-top: 20px;
-  }
-  button {
-    padding: 15px 20px;
-    background-color: transparent;
-    border: 0.7px solid gold;
-    margin: 20px;
-    font-weight: bold;
-    background-color: gold;
-    text-transform: uppercase;
-    border-radius: 3px;
-    color: black;
+    p {
+      margin-top: 20px;
+    }
+    button {
+      padding: 15px 20px;
+      background-color: transparent;
+      border: 0.7px solid gold;
+      margin: 20px;
+      font-weight: bold;
+      background-color: gold;
+      text-transform: uppercase;
+      border-radius: 3px;
+      color: black;
+    }
   }
 }

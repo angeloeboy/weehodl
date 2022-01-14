@@ -29,6 +29,10 @@ body {
   height: 100vh;
 }
 
+.scrollbar-track {
+  display: none !important;
+}
+
 nav {
   position: fixed;
   width: 100%;
@@ -160,14 +164,13 @@ html,
 
 .hero-section {
   padding: 100px 0px;
-  background-image: url("../image/wolf.png");
   background-position: center;
   background-size: cover;
   height: 100vh;
   position: relative;
   overflow: hidden;
   margin: 0 auto;
-  background-attachment: scroll;
+  background-color: black;
   display: none;
 }
 
@@ -644,6 +647,10 @@ html,
 }
 
 .community-section {
+  background-color: black;
+}
+
+.community-section .inner {
   color: white;
   text-align: center;
   margin: 10px 10%;
@@ -654,23 +661,23 @@ html,
   border-top-right-radius: 3px 3px;
 }
 
-.community-section h1 {
+.community-section .inner h1 {
   font-size: 24px;
   text-transform: uppercase;
   font-weight: 900;
 }
 
-.community-section h1 span {
+.community-section .inner h1 span {
   color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: gold;
 }
 
-.community-section p {
+.community-section .inner p {
   margin-top: 20px;
 }
 
-.community-section button {
+.community-section .inner button {
   padding: 15px 20px;
   background-color: transparent;
   border: 0.7px solid gold;
