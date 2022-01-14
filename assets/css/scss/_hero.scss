@@ -190,7 +190,6 @@
       display: block;
       margin: 0 auto;
       position: absolute;
-      top: 10%;
       width: calc(80vw - 139px);
       height: 2px;
       background-color: rgba(201, 171, 2, 0.521);
@@ -200,7 +199,7 @@
     }
 
     .line-two {
-      top: 85%;
+      top: 87%;
       z-index: 97;
     }
   }
