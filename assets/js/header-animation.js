@@ -212,8 +212,9 @@ $(document).ready(() => {
   }, 1000);
 
   setTimeout(() => {
-    $(".testing-2 .lastFrame").css("opacity","1")  
+    $(".testing-2 .lastframe").css("opacity","1")  
     $(".testing-2 .firstFrame").css("opacity","0")  
+    $(".testing-2 .lastframe").css("z-index","3")  
 
   }, 9000);
   

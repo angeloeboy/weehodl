@@ -40,7 +40,7 @@ gsap.to(fundedValue,2,{
   scrollTrigger: {
     trigger: $(".stats"),
     scroller: document.body, 
-    start: "top 95%",
+    start: "top center",
   }
 });
 
@@ -55,7 +55,7 @@ gsap.to(investorNum,2,{
   scrollTrigger: {
     trigger: $(".stats"),
     scroller: document.body, 
-    start: "top 95%",
+    start: "top center",
   }
 });
 
@@ -71,7 +71,7 @@ gsap.to(kolsValue,1,{
   scrollTrigger: {
     trigger: $("#investor"),
     scroller: document.body, 
-    start: "top 95%",
+    start: "top center",
   }
 });
 
@@ -86,10 +86,29 @@ gsap.to(shillersValue,1,{
   scrollTrigger: {
     trigger: $("#investor"),
     scroller: document.body, 
-    start: "top 95%",
+    start: "top center",
   }
 });
 
+
+const statsInfo = gsap.utils.toArray('.stat-item');
+
+statsInfo.forEach((stat, i) => {
+
+  
+  gsap.from(stat, 2, {
+    y: "-5%",
+    opacity: 0,
+    delay: i * 0.5,
+    ease: Circ.easeOut,
+    scrollTrigger: {
+      trigger: stat,
+      scroller: document.body, 
+      start: "top center",
+    }
+  }, 1)
+
+});
 
 const featuresInfo = gsap.utils.toArray('.features-info-text');
 
