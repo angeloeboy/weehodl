@@ -21,6 +21,74 @@ about.from('.feature-section .hidden-text', {
   duration: 1
 }, 2)
 
+gsap.from($(".about-us-text"), {
+  opacity: 0,
+  y: 10,
+  duration: 1
+})
+
+
+
+var fundedValue={val:0} , funded = 12;
+
+gsap.to(fundedValue,2,{
+  val:funded,
+  roundProps:"val",
+  onUpdate:function(){
+    document.getElementById("funded").innerHTML=`$${fundedValue.val}.5M`
+  },
+  scrollTrigger: {
+    trigger: $(".stats"),
+    scroller: document.body, 
+    start: "top 100%",
+  }
+});
+
+var investorNum={val:0} , investors = 1202;
+
+gsap.to(investorNum,2,{
+  val:investors,
+  roundProps:"val",
+  onUpdate:function(){
+    document.getElementById("investor").innerHTML=investorNum.val
+  },
+  scrollTrigger: {
+    trigger: $(".stats"),
+    scroller: document.body, 
+    start: "top 100%",
+  }
+});
+
+
+var kolsValue={val:0} , kols = 272;
+
+gsap.to(kolsValue,1,{
+  val:kols,
+  roundProps:"val",
+  onUpdate:function(){
+    document.getElementById("kols").innerHTML=kolsValue.val
+  },
+  scrollTrigger: {
+    trigger: $("#investor"),
+    scroller: document.body, 
+    start: "top 100%",
+  }
+});
+
+var shillersValue={val:0} , shillers = 358;
+
+gsap.to(shillersValue,1,{
+  val:shillers,
+  roundProps:"val",
+  onUpdate:function(){
+    document.getElementById("shillers").innerHTML=shillersValue.val
+  },
+  scrollTrigger: {
+    trigger: $("#investor"),
+    scroller: document.body, 
+    start: "top 100%",
+  }
+});
 
 
 const featuresInfo = gsap.utils.toArray('.features-info-text');

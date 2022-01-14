@@ -186,6 +186,14 @@
       display: none;
     }
 
+    .lastframe {
+      // display: none;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: -1;
+    }
+
     .line {
       display: block;
       margin: 0 auto;

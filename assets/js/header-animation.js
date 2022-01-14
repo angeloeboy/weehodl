@@ -206,11 +206,15 @@ $(document).ready(() => {
   console.log("reerer")
 
  
+  setTimeout(() => {
+    $(".testing-2 .firstFrame").attr("src","assets/image/Weehodl.gif")
 
-  $(".testing-2 img").attr("src","assets/image/Weehodl.gif")
+  }, 1000);
 
   setTimeout(() => {
-    $(".testing-2 img").attr("src","assets/image/lastFrame.png")  
+    $(".testing-2 .lastFrame").css("opacity","1")  
+    $(".testing-2 .firstFrame").css("opacity","0")  
+
   }, 9000);
   
 })

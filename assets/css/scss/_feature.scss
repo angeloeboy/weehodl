@@ -69,7 +69,6 @@
     .features-info {
       max-width: 617px;
       width: 100%;
-      position: relative;
       h1 {
         margin-left: 50px;
       }
@@ -158,8 +157,9 @@
     @media (max-width: 500px) {
       width: 80vw;
       margin: 0 auto;
-
-      transform: translateY(-55px);
+      // border-bottom: 1px solid rgba(201, 171, 2, 0.521);
+      // padding-bottom: 50px;
+      transform: translateY(-30px);
       .img-container {
         width: 100%;
         max-width: 500px;
@@ -175,55 +175,30 @@
         background: #131313;
         // box-shadow: 0px 0px 10px 4px #00000046;
         padding: 10px 5%;
-        margin-top: 10px;
+        padding-top: 0px;
+        margin-top: 0px;
 
         &-text {
-          margin-top: 10px;
+          margin-top: 0px;
           margin-bottom: 20px;
           font-size: 15px;
         }
       }
-
       .about-us-text {
+        width: 100%;
         display: block;
-        position: absolute;
-        top: 10px;
-        transform: translateY(-65%);
-        width: 46%;
-        right: 0px;
         text-align: center;
-
-        color: white;
-        font-size: 22px;
-        font-weight: bold;
-        // border-left: 2px solid rgb(201, 171, 2);
-
+        background-color: #131313;
+        padding: 10px 0px;
+        border-top: 1px solid rgba(201, 171, 2, 0.521);
+        font-size: 25px;
         text-transform: uppercase;
+        font-weight: 900;
         span {
           color: transparent;
           -webkit-text-stroke-width: 1px;
           -webkit-text-stroke-color: gold;
         }
-      }
-      .box {
-        z-index: -1;
-        height: 27.6px;
-        background: #131313;
-        &:after {
-          position: absolute;
-          width: 2px;
-          // height: 17px;
-          height: 20px;
-          left: 0px;
-          content: "";
-          background-color: rgb(201, 171, 2);
-        }
-      }
-
-      .about-text {
-        z-index: 99;
-        background: transparent;
-        border-top: 2px solid rgb(201, 171, 2);
       }
     }
   }
