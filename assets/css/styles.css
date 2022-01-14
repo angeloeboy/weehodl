@@ -465,6 +465,7 @@ html,
 .feature-section .text-container .features-info {
   max-width: 617px;
   width: 100%;
+  position: relative;
 }
 
 .feature-section .text-container .features-info h1 {
@@ -609,11 +610,9 @@ html,
     width: 46%;
     right: 0px;
     text-align: center;
-    background: #131313;
     color: white;
     font-size: 22px;
     font-weight: bold;
-    border-top: 2px solid #c9ab02;
     text-transform: uppercase;
   }
   .feature-section .text-container .about-us-text span {
@@ -621,13 +620,23 @@ html,
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: gold;
   }
-  .feature-section .text-container .about-us-text:after {
+  .feature-section .text-container .box {
+    z-index: -1;
+    height: 27.6px;
+    background: #131313;
+  }
+  .feature-section .text-container .box:after {
     position: absolute;
     width: 2px;
-    height: 17px;
+    height: 20px;
     left: 0px;
     content: "";
     background-color: #c9ab02;
+  }
+  .feature-section .text-container .about-text {
+    z-index: 99;
+    background: transparent;
+    border-top: 2px solid #c9ab02;
   }
 }
 
