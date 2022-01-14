@@ -206,10 +206,11 @@ $(document).ready(() => {
   console.log("reerer")
 
  
-+
-    $(".testing-2 img").attr("src","assets/image/wolf.gif")
+
+  $(".testing-2 img").attr("src","assets/image/Weehodl.gif")
 
   setTimeout(() => {
     $(".testing-2 img").attr("src","assets/image/lastFrame.png")  
   }, 9000);
+  
 })

@@ -191,17 +191,17 @@
       margin: 0 auto;
       position: absolute;
       top: 10%;
-      width: 80vw;
-      height: 1px;
+      width: calc(80vw - 130px);
+      height: 2px;
       background-color: rgba(201, 171, 2, 0.521);
-      left: 50%;
-      transform: translateX(-50%);
+      left: 10%;
       z-index: 2;
       box-shadow: 0px 0px 10px 4px #00000046;
     }
 
     .line-two {
-      top: 90%;
+      top: 85%;
+      z-index: 97;
     }
   }
 }

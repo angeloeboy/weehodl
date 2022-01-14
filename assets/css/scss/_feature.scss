@@ -159,7 +159,7 @@
       margin: 0 auto;
       // border-bottom: 1px solid rgba(201, 171, 2, 0.521);
       // padding-bottom: 50px;
-      transform: translateY(-30px);
+      transform: translateY(-40px);
       .img-container {
         width: 100%;
         max-width: 500px;
@@ -187,15 +187,18 @@
       .about-us-text {
         display: block;
         position: absolute;
-        top: 0px;
-        transform: translateY(-60%);
-        width: 100px;
+        top: 8px;
+        transform: translateY(-65%);
+        width: 130px;
         right: 0px;
         text-align: center;
-        padding: 5px;
-        background-color: rgb(201, 171, 2);
-        color: black;
+        padding: 5px 0px;
+        background: #131313;
+        color: white;
         font-size: 14px;
+        z-index: -1;
+        border-left: 2px solid rgba(201, 171, 2, 0.521);
+        border-top: 2px solid rgba(201, 171, 2, 0.521);
       }
     }
   }
