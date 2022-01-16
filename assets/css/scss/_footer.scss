@@ -51,8 +51,12 @@ footer {
 
       .outline {
         color: transparent;
-        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-width: 3px;
         -webkit-text-stroke-color: black;
+
+        @media (max-width: 500px) {
+          -webkit-text-stroke-width: 1px;
+        }
       }
     }
   }

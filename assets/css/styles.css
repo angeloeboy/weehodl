@@ -1124,8 +1124,14 @@ html,
 
 .partners-section .text .hidden-text span {
   color: transparent;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: black;
+}
+
+@media (max-width: 500px) {
+  .partners-section .text .hidden-text span {
+    -webkit-text-stroke-width: 1px;
+  }
 }
 
 .partners-section .partners-container {
@@ -1368,8 +1374,14 @@ html,
 
 .projects-section .text .hidden-text span {
   color: transparent;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: black;
+}
+
+@media (max-width: 500px) {
+  .projects-section .text .hidden-text span {
+    -webkit-text-stroke-width: 1px;
+  }
 }
 
 .projects-section .text .second {
@@ -1728,8 +1740,14 @@ footer .text .hidden-text {
 
 footer .text .hidden-text .outline {
   color: transparent;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: black;
+}
+
+@media (max-width: 500px) {
+  footer .text .hidden-text .outline {
+    -webkit-text-stroke-width: 1px;
+  }
 }
 
 footer .links-container {
