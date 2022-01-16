@@ -42,6 +42,12 @@ body {
   width: 1px !important;
 }
 
+.bg {
+  background-size: cover;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.774)), to(rgba(0, 0, 0, 0.774))), url("../image/black-bg4.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.774)), url("../image/black-bg4.jpg");
+}
+
 nav {
   position: fixed;
   width: 100%;
@@ -372,12 +378,8 @@ html,
 }
 
 .feature-section {
-  margin: 200px 0px;
+  padding: 200px 5%;
   color: white;
-  background-image: url("../image/black-bg.jpg");
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 @media (max-width: 600px) {

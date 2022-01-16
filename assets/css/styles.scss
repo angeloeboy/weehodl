@@ -45,6 +45,14 @@ body {
 .scrollbar-track-y {
   width: 1px !important;
 }
+
+.bg {
+  // background-image: url("../image/black-bg4.jpg");
+
+  background-size: cover;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.774)),
+    url("../image/black-bg4.jpg");
+}
 @import "scss/nav";
 
 @import "scss/helper";
