@@ -1138,9 +1138,6 @@ html,
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1150,16 +1147,13 @@ html,
 }
 
 .partners-section .partners-container .partner-item {
-  height: 100%;
   margin-top: 40px;
   margin: 1%;
-  -webkit-box-shadow: 0px 0px 18px rgba(71, 71, 71, 0.25);
-          box-shadow: 0px 0px 18px rgba(71, 71, 71, 0.25);
+  -webkit-box-shadow: 0px 0px 18px rgba(71, 71, 71, 0.075);
+          box-shadow: 0px 0px 18px rgba(71, 71, 71, 0.075);
   background-color: white;
   padding: 50px;
-  width: 50%;
-  max-width: 400px;
-  min-width: 300px;
+  width: 30%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1171,7 +1165,7 @@ html,
 }
 
 .partners-section .partners-container .partner-item img {
-  height: 80px;
+  height: 40px;
   max-width: 100%;
   display: block;
   margin: 0 auto;

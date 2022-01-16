@@ -222,6 +222,7 @@ project.forEach((project) => {
 
 
   if($(window).width() > 500){
+
     $(project).click(() => {
 
       if(clicked){
@@ -256,10 +257,8 @@ project.forEach((project) => {
         },0.2)
   
         clicked = true
-      console.log("clicked")
       }
   
-     
     })
   
   
