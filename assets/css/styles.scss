@@ -46,14 +46,14 @@ body {
   width: 1px !important;
 }
 
-.bg {
-  // background-image: url("../image/black-bg4.jpg");
+// .bg {
+//   // background-image: url("../image/black-bg4.jpg");
 
-  background-size: cover;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.774)),
-    url("../image/black-bg-edited.png");
-  background-position: center center;
-}
+//   background-size: cover;
+//   background: linear-gradient(0deg, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.774)),
+//     url("../image/black-bg-edited.png");
+//   background-position: center center;
+// }
 @import "scss/nav";
 
 @import "scss/helper";
