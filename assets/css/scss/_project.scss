@@ -78,6 +78,7 @@
       width: 23%;
       position: relative;
       z-index: 66;
+      // box-shadow: 0px 0px 18px rgba(71, 71, 71, 0.25);
 
       .logo-container {
         position: relative;
@@ -164,18 +165,18 @@
         }
       }
 
-      &:hover {
-        .project-infos {
-          height: initial;
-          display: initial;
-        }
+      // &:hover {
+      //   .project-infos {
+      //     height: initial;
+      //     display: initial;
+      //   }
 
-        .logo-container {
-          img {
-            filter: grayscale(0%);
-          }
-        }
-      }
+      //   .logo-container {
+      //     img {
+      //       filter: grayscale(0%);
+      //     }
+      //   }
+      // }
 
       @media (max-width: 1140px) {
         min-width: 300px;

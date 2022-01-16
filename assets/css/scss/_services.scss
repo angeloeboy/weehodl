@@ -82,13 +82,12 @@
   .services-container {
     display: flex;
     flex-wrap: wrap;
-
+    justify-content: center;
     .service-item {
       color: white;
-      margin-right: 54px;
       max-width: 512px;
       width: 40%;
-      margin-top: 78px;
+      margin: 39px 27px;
       transition: all 0.4s ease;
       padding: 40px;
       background: #131313;
@@ -169,7 +168,8 @@
         padding-top: 0px;
         min-height: 400px;
         padding: 0px;
-
+        margin-left: 5px;
+        margin-right: 5px;
         .service-title-container {
           align-items: center;
           flex-flow: column;

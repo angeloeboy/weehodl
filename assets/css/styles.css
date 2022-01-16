@@ -786,14 +786,16 @@ html,
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .services-section .services-container .service-item {
   color: white;
-  margin-right: 54px;
   max-width: 512px;
   width: 40%;
-  margin-top: 78px;
+  margin: 39px 27px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   padding: 40px;
@@ -883,6 +885,8 @@ html,
     padding-top: 0px;
     min-height: 400px;
     padding: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
   .services-section .services-container .service-item .service-title-container {
     -webkit-box-align: center;
@@ -1129,6 +1133,8 @@ html,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: black;
+  text-decoration: none;
 }
 
 .partners-section .partners-container .partner-item img {
@@ -1467,16 +1473,6 @@ html,
   .projects-section .projects-container .project-item .project-infos {
     width: 110% !important;
   }
-}
-
-.projects-section .projects-container .project-item:hover .project-infos {
-  height: initial;
-  display: initial;
-}
-
-.projects-section .projects-container .project-item:hover .logo-container img {
-  -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
 }
 
 @media (max-width: 1140px) {

@@ -95,26 +95,6 @@ $(".menu-icon").click(() => {
 })
 
 
-// gsap.to("body", {
-//   backgroundColor: '#F5F5F5',
-//   duration: 0.5,
-//   scrollTrigger: {
-//       trigger: ".partners-section",
-//       toggleActions: "play none none reverse",
-//       scroller: document.body, 
-//   },
-// })
-
-// gsap.to(".services-section", {
-//   css: { 'filter': 'invert(100%)' },
-//   duration: 0.5,
-//   scrollTrigger: {
-//       trigger: ".partners-section",
-//       toggleActions: "play none none reverse",
-//       scroller: document.body, 
-//   },
-// })
-
 
 
 
@@ -242,25 +222,26 @@ project.forEach((project) => {
 
 
   if($(window).width() > 500){
-    $(project).children(".project-infos").children(".more").click(() => {
+    $(project).click(() => {
 
       if(clicked){
         let leave = gsap.timeline();
+
         leave
         .to($(".description"), {
           css: {"max-height": "0px", "padding-bottom": "0px"},
         })
         .to($(project).children(".project-infos"), {
           css: {"width": "100%", "z-index": "initial"},
-          duration: 0.1
-        })
-        .to($(project), {
-          css: {"z-index": "initial"},
         })
         .to($(project).children(".project-infos"), {
           opacity: 0,
           duration: 0.5
         }, 0.1)
+        .to($(project), {
+          css: {"z-index": "initial"},
+          duration: 0.1
+        })
         clicked = false
       }else{
         let tl = gsap.timeline();
@@ -298,10 +279,6 @@ project.forEach((project) => {
         .to($(".description"), {
           css: {"max-height": "0px", "padding-bottom": "0px"},
         })
-        .to($(project).children(".project-infos"), {
-          css: {"width": "100%", "z-index": "initial"},
-          duration: 0.1
-        })
         .to($(project), {
           css: {"z-index": "initial"},
         })
@@ -309,6 +286,10 @@ project.forEach((project) => {
           opacity: 0,
           duration: 0.5
         }, 0.1)
+        .to($(project).children(".project-infos"), {
+          css: {"z-index": "initial"},
+          duration: 1
+        })
       }else{
         let leave = gsap.timeline();
         leave
@@ -352,10 +333,6 @@ project.forEach((project) => {
 let vidCircle = $(".feature-section .circle");
 let videoHover = $(".video");
 
-$(".video").click(() => {
-  console.log("fdsfs")
-})
-
 gsap.set(vidCircle, { scale: 0, xPercent: -50, yPercent: -50 });
 
 videoHover.mouseenter((e) => {
@@ -388,53 +365,18 @@ function positionCircle(e) {
 
 
 //play video on hover
-var figure = $(".video").hover( hoverVideo, hideVideo );
+var figure = $(".globe-vid").hover( hoverVideo, hideVideo );
 
 function hoverVideo(e) {  
-    $('video', this).get(0).play(); 
-    $('video', this).on("ended", () => {
-      $('video', this).get(0).play(); 
-    })
+    $('#video').get(0).play(); 
 }
 
 function hideVideo(e) {
-    $('video', this).
-    get(0).pause(); 
+
+      $('#video').get(0).pause(); 
+      
 }
-
-
-//carousel 
-// $('.multiple-items').slick({
-//   infinite: true,
-//   slidesToShow: 2,
-//   slidesToScroll: 1,
-//   adaptiveHeight: true,
-//   arrows: false,
-//   autoplay: true,
-//   autoplaySpeed: 1000,
-
-//   responsive: [
-//     {
-//       breakpoint: 800,
-//       settings: {
-//         slidesToShow: 2,
-//         slidesToScroll: 1
-//       }
-//     },
-//     {
-//       breakpoint: 500,
-//       settings: {
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-//         autoplay: true,
-
-        
-//       }
-//     }
-
-//   ]
-// });
-
+ 
 
 if($(window).width() <= 500){
 

@@ -96,10 +96,9 @@ const statsInfo = gsap.utils.toArray('.stat-item');
 statsInfo.forEach((stat, i) => {
 
   
-  gsap.from(stat, 2, {
+  gsap.from(stat,{
     y: "-5%",
     opacity: 0,
-    delay: i * 0.5,
     ease: Circ.easeOut,
     scrollTrigger: {
       trigger: stat,
