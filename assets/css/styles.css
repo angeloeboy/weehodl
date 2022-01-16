@@ -374,10 +374,6 @@ html,
 .feature-section {
   padding: 100px 5%;
   color: white;
-  background-size: cover;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.774)), to(rgba(0, 0, 0, 0.774))), url("../image/bg-wolf.jpg");
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.774)), url("../image/bg-wolf.jpg");
-  background-position: center center;
 }
 
 @media (max-width: 600px) {
