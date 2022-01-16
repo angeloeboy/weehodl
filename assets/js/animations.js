@@ -157,7 +157,7 @@ if($(window).width() > 500){
   serviceItem.forEach((item, i) => {
 
     gsap.from(item, { 
-      duration: 0.5,
+      duration: 0.2,
       y: 10,
       opacity: 0,
       scrollTrigger: {
