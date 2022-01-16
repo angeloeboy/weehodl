@@ -233,12 +233,9 @@ project.forEach((project) => {
           css: {"max-height": "0px", "padding-bottom": "0px"},
         })
         .to($(project).children(".project-infos"), {
-          css: {"width": "100%", "z-index": "initial"},
+          css: { "z-index": "initial"},
         })
-        .to($(project).children(".project-infos"), {
-          opacity: 0,
-          duration: 0.5
-        }, 0.1)
+
         .to($(project), {
           css: {"z-index": "initial"},
           duration: 0.1
