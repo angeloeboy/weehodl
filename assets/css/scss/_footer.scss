@@ -76,10 +76,22 @@ footer {
         }
       }
 
+      .smaller {
+        width: 40px !important;
+        margin: 0 auto;
+        display: block;
+      }
+
       @media (max-width: 500px) {
         justify-content: center;
         display: flex;
         margin-top: 8px;
+        li {
+          margin: 10px;
+        }
+        .smaller {
+          margin-top: 5px;
+        }
       }
     }
 
@@ -91,10 +103,18 @@ footer {
 
     @media (max-width: 500px) {
       flex-direction: column-reverse;
-
+      align-items: center;
       .links {
         text-align: center;
       }
+    }
+  }
+
+  .bottom-text {
+    margin-top: 20px;
+
+    @media (max-width: 500px) {
+      text-align: center;
     }
   }
 }

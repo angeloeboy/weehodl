@@ -1760,6 +1760,12 @@ footer .links-container .links li a img {
   width: 50px;
 }
 
+footer .links-container .links .smaller {
+  width: 40px !important;
+  margin: 0 auto;
+  display: block;
+}
+
 @media (max-width: 500px) {
   footer .links-container .links {
     -webkit-box-pack: center;
@@ -1769,6 +1775,12 @@ footer .links-container .links li a img {
     display: -ms-flexbox;
     display: flex;
     margin-top: 8px;
+  }
+  footer .links-container .links li {
+    margin: 10px;
+  }
+  footer .links-container .links .smaller {
+    margin-top: 5px;
   }
 }
 
@@ -1782,8 +1794,21 @@ footer .links-container .logo-container img {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   footer .links-container .links {
+    text-align: center;
+  }
+}
+
+footer .bottom-text {
+  margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+  footer .bottom-text {
     text-align: center;
   }
 }
