@@ -44,8 +44,9 @@ body {
 
 .bg {
   background-size: cover;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.774)), to(rgba(0, 0, 0, 0.774))), url("../image/black-bg4.jpg");
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.774)), url("../image/black-bg4.jpg");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.774)), to(rgba(0, 0, 0, 0.774))), url("../image/black-bg-edited.png");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.774)), url("../image/black-bg-edited.png");
+  background-position: center center;
 }
 
 nav {
