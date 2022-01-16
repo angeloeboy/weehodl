@@ -122,12 +122,15 @@
     }
 
     .img-container {
-      width: 50%;
+      min-width: 50%;
+      height: 100%;
       position: relative;
       overflow: none;
+      height: 600px;
       video {
         z-index: -1;
         width: 100%;
+        max-width: 800px;
       }
 
       img {

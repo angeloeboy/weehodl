@@ -372,7 +372,7 @@ function hoverVideo(e) {
 }
 
 function hideVideo(e) {
-
+      $('#video').load();
       $('#video').get(0).pause(); 
       
 }

@@ -538,14 +538,17 @@ html,
 }
 
 .feature-section .text-container .img-container {
-  width: 50%;
+  min-width: 50%;
+  height: 100%;
   position: relative;
   overflow: none;
+  height: 600px;
 }
 
 .feature-section .text-container .img-container video {
   z-index: -1;
   width: 100%;
+  max-width: 800px;
 }
 
 .feature-section .text-container .img-container img {
