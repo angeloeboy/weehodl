@@ -1709,7 +1709,7 @@ footer .text h1 {
 
 @media (max-width: 500px) {
   footer .text h1 {
-    font-size: 6vw;
+    font-size: 5vw;
     height: 7vw;
   }
 }
@@ -1726,14 +1726,14 @@ footer .text .hidden-text {
   }
 }
 
-footer .text .hidden-text span {
+footer .text .hidden-text .outline {
   color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
 
 footer .links-container {
-  margin-top: 20vh;
+  margin-top: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1745,9 +1745,16 @@ footer .links-container {
           justify-content: space-between;
 }
 
+footer .links-container .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 footer .links-container .links li {
   list-style-type: none;
   margin-top: 8px;
+  margin: 10px;
 }
 
 footer .links-container .links li a {
@@ -1764,6 +1771,7 @@ footer .links-container .links .smaller {
   width: 40px !important;
   margin: 0 auto;
   display: block;
+  margin-top: 5px;
 }
 
 @media (max-width: 500px) {
@@ -1775,12 +1783,6 @@ footer .links-container .links .smaller {
     display: -ms-flexbox;
     display: flex;
     margin-top: 8px;
-  }
-  footer .links-container .links li {
-    margin: 10px;
-  }
-  footer .links-container .links .smaller {
-    margin-top: 5px;
   }
 }
 
