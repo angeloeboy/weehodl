@@ -1378,12 +1378,6 @@ html,
   -webkit-text-stroke-color: black;
 }
 
-@media (max-width: 500px) {
-  .projects-section .text .hidden-text span {
-    -webkit-text-stroke-width: 1px;
-  }
-}
-
 .projects-section .text .second {
   height: initial;
   text-align: center;
@@ -1396,8 +1390,14 @@ html,
 
 .projects-section .text .second div:nth-child(2) {
   color: transparent;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: black;
+}
+
+@media (max-width: 500px) {
+  .projects-section .text .second div:nth-child(2) {
+    -webkit-text-stroke-width: 1px;
+  }
 }
 
 .projects-section .projects-container {
