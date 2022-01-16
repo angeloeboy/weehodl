@@ -374,6 +374,10 @@ html,
 .feature-section {
   margin: 200px 0px;
   color: white;
+  background-image: url("../image/black-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 @media (max-width: 600px) {
@@ -670,6 +674,10 @@ html,
   margin-top: 20px;
 }
 
+.community-section .inner a {
+  text-decoration: none;
+}
+
 .community-section .inner button {
   padding: 15px 20px;
   background-color: transparent;
@@ -680,6 +688,19 @@ html,
   text-transform: uppercase;
   border-radius: 3px;
   color: black;
+  cursor: pointer !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px auto;
+}
+
+.community-section .inner button img {
+  height: 25px;
+  margin-right: 20px;
 }
 
 .services-section {
@@ -1654,7 +1675,7 @@ footer .text h1 {
   font-size: 5vw;
   position: relative;
   overflow: hidden;
-  height: 100px;
+  height: 120px;
   margin: 0 auto;
   width: 100%;
 }
