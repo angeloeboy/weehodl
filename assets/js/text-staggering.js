@@ -23,18 +23,14 @@ about.from('.feature-section .hidden-text', {
 
 gsap.from($(".about-us-text"), {
   opacity: 0,
-  y: 10,
+  y: 15,
   duration: 1,
-  scrollTrigger: {
-    trigger: $(".about-us-text"),
-    scroller: document.body, 
-    start: "top center",
-  }
+ 
 })
 
 gsap.from($(".community-section"), {
   opacity: 0,
-  y: 10,
+  y: 15,
   duration: 1,
   scrollTrigger: {
     trigger: $(".community-section"),
