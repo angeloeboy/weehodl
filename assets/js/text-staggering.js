@@ -143,7 +143,7 @@ const services = gsap.timeline({
   scrollTrigger: {
       trigger: ".services-section .text",
       scroller: document.body, 
-      start: "top 70%",
+      start: "top 100%",
   }
 })
 
