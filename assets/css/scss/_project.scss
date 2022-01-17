@@ -108,6 +108,12 @@
         }
       }
 
+      &:hover {
+        img {
+          filter: grayscale(0%) !important;
+        }
+      }
+
       .project-infos {
         border-radius: 6px;
         padding: 0px 20px;
