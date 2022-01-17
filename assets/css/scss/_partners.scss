@@ -62,7 +62,6 @@
     display: flex;
 
     .partner-item {
-      // height: 100%;
       margin-top: 40px;
       margin: 1%;
       box-shadow: 0px 0px 18px rgba(71, 71, 71, 0.075);
@@ -117,7 +116,6 @@
       }
 
       @media (max-width: 500px) {
-        // width: 80%;
         max-width: 600px;
         width: initial;
         max-width: initial;
@@ -133,6 +131,10 @@
     }
   }
 
+  .container {
+    position: relative;
+  }
+
   .dots {
     display: flex;
     justify-content: space-around !important;
@@ -140,7 +142,7 @@
     margin: 0 auto;
     margin-top: 20px;
     li {
-      list-style-type: none !important;
+      list-style-type: none;
     }
     button {
       background-color: gray;
