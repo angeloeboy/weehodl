@@ -208,25 +208,8 @@
   }
 }
 
-.top-feature {
-  // margin-bottom: -10px !important;
-  margin-top: -70px;
-  display: none;
-  @media (max-width: 500px) {
-    .text {
-      display: block;
-    }
-
-    .img-container {
-      display: none;
-    }
-  }
-}
-
 .community-section {
-  padding: 10px 10%;
-  padding-bottom: 100px;
-
+  padding: 50px 0px;
   .inner {
     color: white;
     text-align: center;
@@ -235,7 +218,8 @@
     padding: 5%;
     border-top-left-radius: 3px 3px;
     border-top-right-radius: 3px 3px;
-
+    max-width: 500px;
+    margin: 0 auto;
     h1 {
       font-size: 24px;
       text-transform: uppercase;
@@ -273,5 +257,10 @@
         margin-right: 20px;
       }
     }
+  }
+
+  @media (max-width: 500px) {
+    padding: 10px 10%;
+    padding-bottom: 100px;
   }
 }
