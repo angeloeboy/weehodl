@@ -32,6 +32,17 @@ gsap.from($(".about-us-text"), {
   }
 })
 
+gsap.from($(".community-section"), {
+  opacity: 0,
+  y: 10,
+  duration: 1,
+  scrollTrigger: {
+    trigger: $(".community-section"),
+    scroller: document.body, 
+    start: "top center",
+  }
+})
+
 
 
 var fundedValue={val:0} , funded = 12;
