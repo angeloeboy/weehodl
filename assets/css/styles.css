@@ -938,9 +938,9 @@ html,
   .services-section .services-container .service-item .service-info {
     padding: 0px 15px;
   }
-  .services-section .services-container .service-item:nth-child(1) .service-title-container video,
-  .services-section .services-container .service-item:nth-child(1) .service-title-container img, .services-section .services-container .service-item:nth-child(7) .service-title-container video,
-  .services-section .services-container .service-item:nth-child(7) .service-title-container img {
+  .services-section .services-container .service-item:nth-child(2) .service-title-container video,
+  .services-section .services-container .service-item:nth-child(2) .service-title-container img, .services-section .services-container .service-item:nth-child(8) .service-title-container video,
+  .services-section .services-container .service-item:nth-child(8) .service-title-container img {
     -webkit-transform: translateY(3px);
             transform: translateY(3px);
   }
