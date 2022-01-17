@@ -381,7 +381,7 @@ html,
 @media (max-width: 500px) {
   .background-wolf {
     background-size: cover;
-    background-position: center -500%;
+    background-position: center 5vh;
   }
 }
 
