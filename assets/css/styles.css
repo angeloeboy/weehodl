@@ -594,6 +594,7 @@ html,
   .feature-section .text-container {
     width: 80vw;
     margin: 0 auto;
+    border-top: 1px solid rgba(201, 171, 2, 0.521);
   }
   .feature-section .text-container .img-container {
     width: 100%;
@@ -781,8 +782,8 @@ html,
   .services-section .text .hidden-text {
     width: 100%;
     text-align: center;
-    -webkit-box-shadow: 0px 0px 10px 4px #00000046;
-            box-shadow: 0px 0px 10px 4px #00000046;
+    -webkit-box-shadow: 0px 10px 10px 4px #00000046;
+            box-shadow: 0px 10px 10px 4px #00000046;
   }
 }
 
@@ -830,8 +831,8 @@ html,
   transition: all 0.4s ease;
   padding: 40px;
   background: #131313;
-  -webkit-box-shadow: 0px 0px 10px 4px #00000046;
-          box-shadow: 0px 0px 10px 4px #00000046;
+  -webkit-box-shadow: 0px 0px 10px 4px #00000046 !important;
+          box-shadow: 0px 0px 10px 4px #00000046 !important;
 }
 
 .services-section .services-container .service-item .service-title-container {
@@ -939,6 +940,12 @@ html,
   .services-section .services-container .service-item:nth-child(8) .service-title-container img {
     -webkit-transform: translateY(3px);
             transform: translateY(3px);
+  }
+}
+
+@media (max-width: 500px) {
+  .services-section .services-container {
+    min-height: 550px;
   }
 }
 
