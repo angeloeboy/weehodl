@@ -371,6 +371,12 @@ html,
   }
 }
 
+.background-wolf {
+  background-size: cover;
+  background-image: url("../image/bg-wolf.jpg");
+  background-position: 50% -20%;
+}
+
 .feature-section {
   padding: 100px 5%;
   color: white;
@@ -640,7 +646,6 @@ html,
 }
 
 .community-section {
-  background-color: black;
   padding: 10px 10%;
   padding-bottom: 40px;
   border-bottom: 1px solid rgba(201, 171, 2, 0.521);
