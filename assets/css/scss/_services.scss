@@ -1,5 +1,15 @@
 .services-section {
   padding-bottom: 100px;
+
+  .black-line {
+    content: "";
+    position: absolute;
+    top: -10px;
+    height: 2px;
+    background-color: black;
+    width: 80%;
+  }
+
   .text {
     h1 {
       font-weight: 900;
