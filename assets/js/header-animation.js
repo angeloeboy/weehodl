@@ -207,7 +207,7 @@ $(document).ready(() => {
 
  
   setTimeout(() => {
-    $(".testing-2 .firstFrame").attr("src","assets/image/Weehodl.gif")
+    $(".testing-2 .firstFrame").attr("src","assets/image/Weehodl_Wolf_No-BG.gif")
 
   }, 1000);
 
