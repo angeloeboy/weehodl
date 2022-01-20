@@ -218,7 +218,6 @@
     color: white;
     text-align: center;
     margin-top: 0px;
-    // background-color: #131313;
     padding: 5%;
     border-top-left-radius: 3px 3px;
     border-top-right-radius: 3px 3px;
@@ -243,7 +242,6 @@
     }
     button {
       padding: 15px 20px;
-      background-color: transparent;
       border: 0.7px solid gold;
       margin: 20px;
       font-weight: bold;
@@ -255,10 +253,23 @@
       display: flex;
       align-items: center;
       margin: 20px auto;
+      background-color: transparent;
+      transition: all 0.4s ease;
+      color: white;
 
       img {
         height: 25px;
         margin-right: 20px;
+        filter: invert(100%);
+      }
+
+      &:hover {
+        background-color: gold;
+        color: black;
+
+        img {
+          filter: invert(0%);
+        }
       }
     }
   }
