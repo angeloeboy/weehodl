@@ -88,10 +88,18 @@ let menuClicked = false
 const menuLinks = gsap.utils.toArray('.menus li');
 
 
-
 $(".menu-icon").click(() => {
 
   menuClickedFunction();
+  $(".menu-icon").toggleClass('animate');
+  $('.hamburger-menu').toggleClass('animate');
+})
+
+$(".hamburger-menu").click(() => {
+
+  menuClickedFunction();
+  $(".menu-icon").toggleClass('animate');
+  $('.hamburger-menu').toggleClass('animate');
 })
 
 
