@@ -202,7 +202,7 @@ gsap.to($("nav"), {
 }
 })
 
-$(window).load(() => {
+$(window).ready(() => {
 
   setTimeout(() => {
     $(".testing-2 .firstFrame").attr("src","assets/image/Weehodl_Wolf_No-BG.gif")
@@ -216,3 +216,11 @@ $(window).load(() => {
   }, 9000);
   
 })
+
+
+
+window.addEventListener("load", event => {
+  var image = $(".testing-2 .firstFrame");
+  var isLoaded = image.complete && image.naturalHeight !== 0;
+  console.log("loaded");
+});
