@@ -202,7 +202,7 @@ gsap.to($("nav"), {
 }
 })
 
-$(window).load(() => {
+$(window).ready(() => {
   console.log("reerer")
 
  

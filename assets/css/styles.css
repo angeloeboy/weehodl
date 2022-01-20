@@ -331,6 +331,7 @@ html,
   position: absolute;
   left: 50%;
   z-index: -1;
+  opacity: 0;
 }
 
 .testing-2 video {
