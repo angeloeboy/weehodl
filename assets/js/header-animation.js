@@ -220,9 +220,10 @@ $(window).load(() => {
 
 
 window.addEventListener("load", event => {
-  var image = $(".testing-2 .animation")
+  var image = document.getElementById('animation');
   var isLoaded = image.complete && image.naturalHeight !== 0;
   if(isLoaded){
-    console.log("loaded")
+    console.log(isLoaded)
   }
+
 });
