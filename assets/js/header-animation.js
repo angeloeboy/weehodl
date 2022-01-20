@@ -204,7 +204,31 @@ gsap.to($("nav"), {
 
 $(window).load(() => {
 
-  setTimeout(() => {
+  // setTimeout(() => {
+  //   $(".testing-2 .firstFrame").attr("src","assets/image/Weehodl_Wolf_No-BG.gif")
+  // }, 1000);
+
+  // setTimeout(() => {
+  //   $(".testing-2 .lastframe").css("opacity","1")  
+  //   $(".testing-2 .firstFrame").css("opacity","0")  
+  //   $(".testing-2 .lastframe").css("z-index","3")  
+
+  // }, 9000);
+  
+
+
+
+
+})
+
+
+
+let interval = setInterval(() => {
+  var image = document.getElementById('animation');
+  var isLoaded = image.complete && image.naturalHeight !== 0;
+
+  if(isLoaded){
+      setTimeout(() => {
     $(".testing-2 .firstFrame").attr("src","assets/image/Weehodl_Wolf_No-BG.gif")
   }, 1000);
 
@@ -214,16 +238,9 @@ $(window).load(() => {
     $(".testing-2 .lastframe").css("z-index","3")  
 
   }, 9000);
-  
-})
-
-
-
-window.addEventListener("load", event => {
-  var image = document.getElementById('animation');
-  var isLoaded = image.complete && image.naturalHeight !== 0;
-  if(isLoaded){
-    console.log(isLoaded)
+    clearInterval(interval)
   }
+  
+}, 1000);
 
-});
+
