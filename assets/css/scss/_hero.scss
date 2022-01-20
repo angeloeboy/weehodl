@@ -163,6 +163,10 @@
     display: none;
   }
 
+  .animation {
+    display: none;
+  }
+
   @media (max-width: 500px) {
     position: relative;
     height: initial;
@@ -189,10 +193,6 @@
       top: 80px;
       left: 0px;
       z-index: -1;
-    }
-
-    .animation {
-      display: none;
     }
 
     .line {

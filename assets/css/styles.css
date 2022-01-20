@@ -342,6 +342,10 @@ html,
   display: none;
 }
 
+.testing-2 .animation {
+  display: none;
+}
+
 @media (max-width: 500px) {
   .testing-2 {
     position: relative;
@@ -365,9 +369,6 @@ html,
     top: 80px;
     left: 0px;
     z-index: -1;
-  }
-  .testing-2 .animation {
-    display: none;
   }
   .testing-2 .line {
     display: block;
