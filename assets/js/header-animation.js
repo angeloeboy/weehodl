@@ -222,5 +222,7 @@ $(window).load(() => {
 window.addEventListener("load", event => {
   var image = $(".testing-2 .animation")
   var isLoaded = image.complete && image.naturalHeight !== 0;
-  console.log("animation loaded");
+  if(isLoaded){
+    console.log("loaded")
+  }
 });
