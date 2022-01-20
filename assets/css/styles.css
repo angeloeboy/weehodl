@@ -366,6 +366,9 @@ html,
     left: 0px;
     z-index: -1;
   }
+  .testing-2 .animation {
+    display: none;
+  }
   .testing-2 .line {
     display: block;
     margin: 0 auto;
@@ -385,8 +388,8 @@ html,
 }
 
 .background-wolf {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../image/stars.gif");
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/stars.gif");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../image/Desktop-Stars.gif");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/Desktop-Stars.gif");
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;

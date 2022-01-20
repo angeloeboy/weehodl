@@ -191,6 +191,10 @@
       z-index: -1;
     }
 
+    .animation {
+      display: none;
+    }
+
     .line {
       display: block;
       margin: 0 auto;
@@ -213,7 +217,7 @@
 .background-wolf {
   // background-color: black;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../image/stars.gif");
+    url("../image/Desktop-Stars.gif");
   // background-image: url("../image/Desktop-Stars.gif");
   background-position: center bottom;
   background-size: cover;
