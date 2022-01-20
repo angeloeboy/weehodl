@@ -221,8 +221,9 @@
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center 50%;
   position: relative;
+  overflow-y: hidden;
   .desktop-mountain {
     position: absolute;
     bottom: 0px;
