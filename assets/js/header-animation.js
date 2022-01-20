@@ -202,7 +202,7 @@ gsap.to($("nav"), {
 }
 })
 
-$(document).ready(() => {
+$(window).load(() => {
 
   setTimeout(() => {
     $(".testing-2 .firstFrame").attr("src","assets/image/Weehodl_Wolf_No-BG.gif")
