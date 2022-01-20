@@ -35,7 +35,7 @@ gsap.from($(".community-section"), {
   scrollTrigger: {
     trigger: $(".community-section"),
     scroller: document.body, 
-    start: "top center",
+    start: "top 100%",
   }
 })
 

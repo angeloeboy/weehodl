@@ -449,14 +449,14 @@ var slickInterval = window.setInterval(testimonialsSlick, 300);
 
 
 
-$(document).ready(() => {
-  $("#wolf-animation")[0].currentTime = 0;
-  setTimeout(() => {
-   $("#wolf-animation")[0].play();
+// $(document).ready(() => {
+//   $("#wolf-animation")[0].currentTime = 0;
+//   setTimeout(() => {
+//    $("#wolf-animation")[0].play();
     
-  }, 1500);
+//   }, 1500);
 
-})
+// })
 
 
 //scroll to top
