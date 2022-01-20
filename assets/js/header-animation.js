@@ -202,10 +202,8 @@ gsap.to($("nav"), {
 }
 })
 
-$(window).ready(() => {
-  console.log("reerer")
+$(window).load(() => {
 
- 
   setTimeout(() => {
     $(".testing-2 .firstFrame").attr("src","assets/image/Weehodl_Wolf_No-BG.gif")
   }, 1000);

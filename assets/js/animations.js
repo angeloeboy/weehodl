@@ -449,10 +449,6 @@ var slickInterval = window.setInterval(testimonialsSlick, 300);
 
 
 
-
-
-$("#wolf-animation")[0].pause();
-
 $(document).ready(() => {
   $("#wolf-animation")[0].currentTime = 0;
   setTimeout(() => {
