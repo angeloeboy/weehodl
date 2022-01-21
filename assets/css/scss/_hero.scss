@@ -216,8 +216,10 @@
 
 .background-wolf {
   // background-color: black;
+  // background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  //   url("../image/Desktop-Stars.gif");
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../image/Desktop-Stars.gif");
+    url("../image/looped-stars.gif");
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
