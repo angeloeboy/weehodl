@@ -29,6 +29,21 @@ body {
   height: 100vh;
 }
 
+@media (max-width: 500px) {
+  html,
+  body {
+    overflow-x: visible;
+    background: #0d0c0c;
+  }
+  body {
+    height: initial;
+    width: initial;
+  }
+  .scroller {
+    height: initial;
+  }
+}
+
 .scrollbar-track {
   background-color: transparent !important;
 }

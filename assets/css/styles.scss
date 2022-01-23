@@ -16,20 +16,32 @@
 html,
 body {
   overflow-x: hidden;
-  // background-color: rgb(0, 0, 0);
   background: #0d0c0c;
 }
 
 body {
   height: 100%;
   width: 100%;
-  // background-image: url("../image/wolf.png");
-  // background-position: center;
-  // background-size: cover;
 }
 
 .scroller {
   height: 100vh;
+}
+
+@media (max-width: 500px) {
+  html,
+  body {
+    overflow-x: visible;
+    background: #0d0c0c;
+  }
+  body {
+    height: initial;
+    width: initial;
+  }
+
+  .scroller {
+    height: initial;
+  }
 }
 
 .scrollbar-track {
