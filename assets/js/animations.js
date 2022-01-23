@@ -14,7 +14,8 @@ let width = $(window).width();
 console.log(width)
 
 let menuClickedFunction = () => {
-
+  $(".menu-icon").toggleClass('animate');
+  $('.hamburger-menu').toggleClass('animate');
   if(width <= 800){
     if(!menuClicked){
       $(".menus").css("display", "flex")
@@ -60,24 +61,50 @@ let menuClickedFunction = () => {
 } 
 
 $(".services-link").click(() => {
-  bodyScrollBar.scrollTo(0,serviceslink.offsetTop - 200, 1000 )
+
+  if($(window).width() >= 500){
+    bodyScrollBar.scrollTo(0,serviceslink.offsetTop - 200, 1000 )
+
+  }else{
+    gsap.to(window, {duration: 1, scrollTo: {y: "#services", offsetY: 100}, ease: "power2"});
+  }
+
   menuClickedFunction();
 })
 
 $(".partners-link").click(() => {
-  bodyScrollBar.scrollTo(0,partnerslink.offsetTop - 71, 1000 )
+
+  if($(window).width() >= 500){
+    bodyScrollBar.scrollTo(0,partnerslink.offsetTop - 71, 1000 )
+  }else{
+    gsap.to(window, {duration: 1, scrollTo: {y: "#partners", offsetY: 100}, ease: "power2"});
+  }
+
   menuClickedFunction();
 
 })
 
 $(".portfolio-link").click(() => {
+
+  
+  if($(window).width() >= 500){
+    bodyScrollBar.scrollTo(0,portfolio.offsetTop - 71, 1000 )
+
+  }else{
+    gsap.to(window, {duration: 1, scrollTo: {y: "#portfolio", offsetY: 100}, ease: "power2"});
+  }
+
   menuClickedFunction();
-  bodyScrollBar.scrollTo(0,portfolio.offsetTop - 71, 1000 )
 })
 
 $(".contact-link").click(() => {
   menuClickedFunction();
-  bodyScrollBar.scrollTo(0,contact.offsetTop - 100, 1000 )
+
+  if($(window).width() >= 500){
+    bodyScrollBar.scrollTo(0,contact.offsetTop - 100, 1000 )
+  }else{
+    gsap.to(window, {duration: 1, scrollTo: {y: "#contact", offsetY: 100}, ease: "power2"});
+  }
 })
 
 
@@ -88,71 +115,18 @@ let menuClicked = false
 const menuLinks = gsap.utils.toArray('.menus li');
 
 
-$(".menu-icon").click(() => {
+// $(".menu-icon").click(() => {
 
-  menuClickedFunction();
-  $(".menu-icon").toggleClass('animate');
-  $('.hamburger-menu').toggleClass('animate');
-})
+//   menuClickedFunction();
+//   $(".menu-icon").toggleClass('animate');
+//   $('.hamburger-menu').toggleClass('animate');
+// })
 
 $(".hamburger-menu").click(() => {
 
   menuClickedFunction();
-  $(".menu-icon").toggleClass('animate');
-  $('.hamburger-menu').toggleClass('animate');
+
 })
-
-
-
-
-
-//Feature section
-// let wordsTitle = $(".feature-section .first").text().split(" ");
-// $(".feature-section .first").text("")
-
-// wordsTitle.map((wordsTitle) => {
-//   $(".feature-section .first").append(`<div> <span>${wordsTitle} </span></div> `)
-// })
-
-// const featuresInfoTitle = gsap.utils.toArray('.feature-section .first span');
-
-// featuresInfoTitle.forEach( (span, i) => {
-
-//   gsap.from(span, {
-//     y: "100%",
-//     duration: 1,
-//     delay: i * 0.1,
-//     scrollTrigger: {
-//         trigger: $('.feature-section .first span'),
-//         scroller: document.body, 
-//         start: "top center",
-//     },
-//   })
-// })
-
-
-// let offerTitle = $(".services-section .title").text().split(" ");
-// $(".services-section .title").text("")
-
-// offerTitle.map((offerTitle) => {
-//   $(".services-section .title").append(`<div> <span>${offerTitle} </span></div> `)
-// })
-
-// const offerTitleSpan = gsap.utils.toArray(".services-section .title span");
-
-// offerTitleSpan.forEach( (span, i) => {
-
-//   gsap.from(span, {
-//     y: "100%",
-//     duration: 1,
-//     delay: i * 0.1,
-//     scrollTrigger: {
-//         trigger: $(".services-section .title"),
-//         scroller: document.body, 
-//         start: "top center",
-//     },
-//   })
-// })
 
 
 
@@ -469,7 +443,13 @@ var slickInterval = window.setInterval(testimonialsSlick, 300);
 
 //scroll to top
 $(".scroll-to-top").click(() => {
-  bodyScrollBar.scrollTo(0, 0, 1000 )
+
+  if($(window).width() >= 500){
+    bodyScrollBar.scrollTo(0, 0, 1000 )
+  }else{
+    gsap.to(window, {duration: 1, scrollTo: 0, ease: "power2"});
+  }
+  
 })
 
 $("nav .logo-container").click(() => {
