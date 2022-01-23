@@ -389,15 +389,15 @@ if($(window).width() <= 500){
   function testimonialsSlick() {
     if (typeof $.fn.slick == 'function') {
       window.clearInterval(slickInterval)
-      console.log("refresh the scrollTrigger")
 
       setTimeout(() => {
         ScrollTrigger.refresh()
         
       }, 300);  
 
-   }
-}
+    }
+  }
+
 var slickInterval = window.setInterval(testimonialsSlick, 300);
 
  $('.multiple-items').slick({
@@ -413,7 +413,7 @@ var slickInterval = window.setInterval(testimonialsSlick, 300);
 
 });
 
-$(".dots button").text("")
+  $(".dots button").text("")
 
   
 }

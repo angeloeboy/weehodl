@@ -117,9 +117,6 @@
           display: none;
           max-height: 60px;
         }
-
-        @media (max-width: 500px) {
-        }
       }
 
       &:hover {
@@ -132,11 +129,15 @@
         }
       }
 
-      .service-info {
-        margin-top: 7px;
-        line-height: 34px;
-        // font-size: 16px;
-      }
+      // .service-info {
+      //   margin-top: 7px;
+      //   line-height: 34px;
+      // }
+
+      // p {
+      //   margin-top: 7px;
+      //   // line-height: 34px;
+      // }
 
       @media (max-width: 1097px) {
         width: 45%;
@@ -167,6 +168,7 @@
         min-height: 500px;
         padding: 0px;
         padding-bottom: 30px;
+
         .service-title-container {
           align-items: center;
           flex-flow: column;
@@ -181,9 +183,20 @@
           }
         }
 
-        .service-info {
-          padding: 0px 15px;
-        }
+        // .service-info {
+        //   padding: 0px 15px;
+        //   font-size: 15px;
+
+        //   .yellow {
+        //     font-size: 15px;
+        //   }
+        // }
+
+        // p {
+        //   padding: 0px 15px;
+        //   font-size: 15px;
+        //   line-height: 183.5%;
+        // }
 
         &:nth-child(2),
         &:nth-child(8) {

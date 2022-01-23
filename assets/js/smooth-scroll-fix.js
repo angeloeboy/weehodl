@@ -34,7 +34,7 @@ let bodyScrollBar;
 if($(window).width() >= 500){
   const scroller = document.querySelector('.scroller');
 // let bodyScrollBar = Scrollbar.init(document.body, { damping: 0.05, delegateTo: document });
-  bodyScrollBar = Scrollbar.init(scroller, { damping: 0.05, delegateTo: document });
+   bodyScrollBar = Scrollbar.init(scroller, { damping: 0.05, delegateTo: document });
 
  
   bodyScrollBar.setPosition(0, 0);
